@@ -1,1 +1,3 @@
 # VUEX
+
+## Vuex is fun
