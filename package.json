@@ -1,0 +1,18 @@
+{
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "vuepress": "^1.4.1"
+  },
+  "author": {
+    "name": "Romain Capelle",
+    "email": "romain@romaincapelle.com",
+    "url": "http://romaincapelle.com/"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress-theme-default-prefers-color-scheme": "^1.0.7"
+  }
+}
