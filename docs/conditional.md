@@ -1,14 +1,14 @@
 # Conditionals
 
-## Conditional from data
+## Conditional v-if/v-else
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueConditionalData.vue{1}
+<<< @/docs/.vuepress/components/Conditional/Data.vue{1}
 
 #### Output:
 
-<VueConditional />
+<Conditional-Data />
 
 ## Conditional using a template
 

@@ -7,7 +7,7 @@ Watch is most useful when you want to perform asynchronous in response to changi
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueWatch.vue{2,8}
+<<< @/docs/.vuepress/components/VueWatch.vue{4,13,17-27}
 
 #### Output:
 

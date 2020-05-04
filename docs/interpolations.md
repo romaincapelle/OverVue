@@ -6,21 +6,21 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueInterpolationText.vue{2,8}
+<<< @/docs/.vuepress/components/Interpolation/Text.vue{2,8}
 
 #### Output:
 
-<VueInterpolationText />
+<Interpolation-Text />
 
 ## v-pre and v-once
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueInterpolations.vue{3-5,14}
+<<< @/docs/.vuepress/components/Interpolation/Vprevonce.vue{3-5}
 
 #### Output:
 
-<VueInterpolations />
+<Interpolation-Vprevonce />
 
 ## Interpolate some JavaScript
 
@@ -28,10 +28,8 @@ You can use simple JS expression:
 
 #### Input:
 
-```
-<p> {{ numberOfDalmatians * 2 }}</p>
-```
+<<< @/docs/.vuepress/components/Interpolation/Js.vue{2}
 
 #### Output:
 
-202
+<Interpolation-Js />

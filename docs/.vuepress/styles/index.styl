@@ -1,5 +1,5 @@
 html, body, .navbar, .sidebar, .links, .nav-dropdown {
-  background-color: #131313 !important;
+  background-color: #100d23 !important;
 }
 
 .search-box input{
@@ -15,7 +15,7 @@ p {
 }
 
 [id*="output"] + p, [id*="output"] + div{
-  background-color: #191c21;
+  background-color: #1e1d45;
     padding: 2%;
     border: 1px solid #00ff00;
     box-shadow: rgba(0,255,0,0.6) 0px 0px 7px
@@ -27,7 +27,7 @@ a.sidebar-link.active, a.sidebar-link.hover {
 }
 
 [id*="input"] + div{
-  background-color: #191c21;
+  background-color: #1e1d45;
     box-shadow: #f09 0px 0px 7px;
 }
 
@@ -44,24 +44,26 @@ span.site-name:hover {
 }
 
 p code {
-  background-color:  #2a2a2a !important;
+  background-color:  #1e1d45 !important;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #191c21;
+    background-color: #1e1d45;
     color: #ffffff;
     border: 1px solid #00ff00
     border-radius: 1rem;
+    margin-bottom: 20px
+
 }
 
 button:focus {outline:0;}
 
 button:hover {
     padding: 10px 20px;
-    background-color: #191c21;
-    color: #00ff00;
-    border: 1px solid #00ff00
+    background-color: #00ff00;
+    border: 1px solid #1e1d45;
+    color: #1e1d45;
     box-shadow: rgba(0, 255, 0, 0.6) 0px 0px 7px;
 }
 
@@ -82,8 +84,49 @@ input {
     background-size: 1rem;
 }
 
-input[type="text"] {
-    color: #191c21;
+input[type="text"],input[type="number"],  {
+    color: #1e1d45;
 }
 
+.custom-block
+  &.tip
+    background-color: $codeBgColor
 
+
+
+// Toggle Switch
+input.switch {
+    display: none;
+}
+label {
+    cursor: pointer;
+    display: block;
+    border: 1px solid #00ff00;
+    border-radius: 11px;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    transition: all 0.2s;
+}
+label:after {
+    content: '';
+    background-color: #FFF;
+    border: 1px solid #1e1d45;
+    border-radius: 10px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+}
+input:checked + label {
+    background-color: #00ff00;
+    border-color: #00ff00;
+    box-shadow: rgba(0, 255, 0, 0.6) 0px 0px 7px;
+}
+input:checked + label:after {
+    left: 20px;
+    border-color: #00ff00;
+}
+ 

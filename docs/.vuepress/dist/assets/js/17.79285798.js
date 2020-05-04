@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{348:function(t,n,e){"use strict";e.r(n);var i={data:function(){return{image:"http://www.fillmurray.com/710/210"}}},r=e(33),a=Object(r.a)(i,(function(){var t=this.$createElement,n=this._self._c||t;return n("div",[n("img",{attrs:{src:this.image}})])}),[],!1,null,null,null);n.default=a.exports}}]);

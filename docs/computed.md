@@ -9,8 +9,8 @@ Computed properties, convenient for simple operations, allow us to define a prop
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueComputed.vue{5,14-15,20}
+<<< @/docs/.vuepress/components/Computed/Property.vue{2,13-17}
 
 #### Output:
 
-<VueComputed />
+<Computed-Property />
