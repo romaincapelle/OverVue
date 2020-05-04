@@ -1,4 +1,6 @@
-# What is OverVue.dev ?
+# OverVue.dev
+
+## What is OverVue.dev ?
 
 I build this website (using [VuePress](https://vuepress.vuejs.org/)) as I was starting my journey with [Vue.js](https://vuejs.org/) for two reasons:
 

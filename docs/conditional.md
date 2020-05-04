@@ -4,7 +4,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueConditional.vue{2,8}
+<<< @/docs/.vuepress/components/VueConditionalData.vue{1}
 
 #### Output:
 

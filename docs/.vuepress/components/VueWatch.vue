@@ -17,8 +17,8 @@ export default {
   watch: {
     counter: function(counter) {
       var vm = this;
-      vm.opinion = 'Let me think about it for 4 seconds.';
-      // setTimemout to 
+      vm.opinion = 'Loading...';
+      // setTimemout to
       setTimeout(function() {
         vm.counter = 101;
         vm.opinion = 'No, 101 is good';

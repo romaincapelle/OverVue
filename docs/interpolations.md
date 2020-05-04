@@ -6,13 +6,13 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueInterpolationNutshell.vue{9}
+<<< @/docs/.vuepress/components/VueInterpolationText.vue{2,8}
 
 #### Output:
 
-<VueInterpolationNutshell />
+<VueInterpolationText />
 
-### More cases:
+## v-pre and v-once
 
 #### Input:
 

@@ -28,10 +28,11 @@ a.sidebar-link.active, a.sidebar-link.hover {
 
 [id*="input"] + div{
   background-color: #191c21;
-    padding: 2%;
-    border: 1px solid #f09;
-    box-shadow: #f09 0px 0px 7px
-    margin-top: 16px;
+    box-shadow: #f09 0px 0px 7px;
+}
+
+.theme-default-content:not(.custom) > h4 {
+    margin-bottom: 16px;
 }
 
 span.site-name {
@@ -53,6 +54,8 @@ button {
     border: 1px solid #00ff00
     border-radius: 1rem;
 }
+
+button:focus {outline:0;}
 
 button:hover {
     padding: 10px 20px;
@@ -82,3 +85,5 @@ input {
 input[type="text"] {
     color: #191c21;
 }
+
+

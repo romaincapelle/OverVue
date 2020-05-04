@@ -2,12 +2,12 @@
 
 ## Class Binding
 
-## Style Binding
+### Dynamic Styling with css classes
 
 #### Input:
 
-<<< @/docs/.vuepress/components/VueStyle.vue{2,8}
+<<< @/docs/.vuepress/components/VueClassBindingInline.vue{2,8}
 
 #### Output:
 
-<VueStyle />
+<VueClassBindingInline />
