@@ -20,6 +20,7 @@ p {
     border: 1px solid #00ff00;
     box-shadow: rgba(0,255,0,0.6) 0px 0px 7px
     margin-top: 16px;
+    margin-bottom: 50px;
 }
 
 a.sidebar-link.active, a.sidebar-link.hover {
@@ -92,13 +93,11 @@ input[type="text"],input[type="number"],  {
   &.tip
     background-color: $codeBgColor
 
-
-
 // Toggle Switch
-input.switch {
+input.switch, input.switch-template, input.switchShow {
     display: none;
 }
-label {
+label.toggle {
     cursor: pointer;
     display: block;
     border: 1px solid #00ff00;
@@ -108,7 +107,7 @@ label {
     position: relative;
     transition: all 0.2s;
 }
-label:after {
+label.toggle:after {
     content: '';
     background-color: #FFF;
     border: 1px solid #1e1d45;
@@ -130,3 +129,9 @@ input:checked + label:after {
     border-color: #00ff00;
 }
  
+ // Child Component
+
+ .child {
+  border: solid 1px #00ff00;
+  padding: 5px 20px;
+}

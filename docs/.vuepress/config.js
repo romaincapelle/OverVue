@@ -1,11 +1,13 @@
 module.exports = {
   title: 'OverVue.dev',
+  description: 'A Quick Approach to Vue.JS core concepts',
   locales: {
     '/': { lang: 'en-US' },
     '/fr/': { lang: 'fr-FR' },
   },
   serviceWorker: true,
   themeConfig: {
+    logo: '/favicon.svg', 
     nav: [
       { text: 'Home', link: '/' },
       // { text: 'CLI', link: '/cli' },

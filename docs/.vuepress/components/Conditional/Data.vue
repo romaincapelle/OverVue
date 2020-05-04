@@ -7,9 +7,9 @@
       id="switch"
       name="some-switch"
     />
-    <label for="switch"></label>
-    <p v-if="showing">"First Option"<span> /and its childs</span></p>
+    <label class="toggle" for="switch"></label>
     <!-- The other value are NOT in the DOM -->
+    <p v-if="showing">"First Option"<span> /and its childs</span></p>
     <p v-else-if="!showing">"Second option"</p>
     <p v-else>Can't see me</p>
   </div>
@@ -24,5 +24,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

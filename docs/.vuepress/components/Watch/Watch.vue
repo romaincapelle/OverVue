@@ -22,7 +22,7 @@ export default {
       setTimeout(function() {
         vm.counter = 101;
         vm.opinion = 'No, 101 is good';
-      }, 4000);
+      }, 1000);
     },
   },
 };
