@@ -15,7 +15,7 @@ export default {
 
 ```
 
-## Passing data with props
+## Passing data to Child
 
 #### Input Parent:
 
@@ -28,6 +28,20 @@ export default {
 #### Output:
 
 <MyParentB />
+
+## Passing data to Parent
+
+#### Input Parent:
+
+<<< @/docs/.vuepress/components/MyParentE.vue{1}
+
+#### Input Child:
+
+<<< @/docs/.vuepress/components/MyChildE.vue{1}
+
+#### Output:
+
+<MyParentE />
 
 ## Sync data Parent/Child
 
