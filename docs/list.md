@@ -4,7 +4,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/lists/Withoutindex.vue{3-5,12}
+<<< @/docs/.vuepress/components/Lists/Withoutindex.vue{3-5,12}
 
 #### Output:
 
@@ -14,7 +14,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/lists/Withindex.vue{3-5,12}
+<<< @/docs/.vuepress/components/Lists/Withindex.vue{3-5,12}
 
 #### Output:
 
@@ -24,7 +24,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/lists/Onobjects.vue{3-5,12-15}
+<<< @/docs/.vuepress/components/Lists/Onobjects.vue{3-5,12-15}
 
 #### Output:
 
@@ -34,7 +34,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/lists/NestedLoop.vue{3-7,14-17}
+<<< @/docs/.vuepress/components/Lists/NestedLoop.vue{3-7,14-17}
 
 #### Output:
 
@@ -44,7 +44,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/lists/LoopThoughIntegers.vue{3}
+<<< @/docs/.vuepress/components/Lists/LoopThoughIntegers.vue{3}
 
 #### Output:
 
