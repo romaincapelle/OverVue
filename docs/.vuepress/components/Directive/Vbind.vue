@@ -5,7 +5,7 @@
 export default {
   data() {
     return {
-      image: 'https://www.fillmurray.com/710/210',
+      image: 'https://source.unsplash.com/collection/1270951/710x410',
     };
   },
 };
