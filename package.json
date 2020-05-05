@@ -1,7 +1,8 @@
 {
   "license": "BSD-3-Clause",
   "devDependencies": {
-    "vuepress": "^1.4.1"
+    "vuepress": "^1.4.1",
+    "node-sass": "^4.12.0"
   },
   "author": {
     "name": "Romain Capelle",

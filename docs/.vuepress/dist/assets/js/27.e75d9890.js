@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{338:function(s,t,n){"use strict";n.r(t);var e={props:["name"]},i=n(33),a=Object(i.a)(e,(function(){var s=this.$createElement,t=this._self._c||s;return t("div",{staticClass:"child"},[t("p",[this._v("As prop from parent: "+this._s(this.name))])])}),[],!1,null,null,null);t.default=a.exports}}]);

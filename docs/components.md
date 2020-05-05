@@ -33,11 +33,7 @@ export default {
 
 #### Input Parent:
 
-<<< @/docs/.vuepress/components/MyParentE.vue{1}
-
 #### Input Child:
-
-<<< @/docs/.vuepress/components/MyChildE.vue{1}
 
 #### Output:
 
