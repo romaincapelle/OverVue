@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
     "vuepress-theme-default-prefers-color-scheme": "^1.0.7"
   }
 }
