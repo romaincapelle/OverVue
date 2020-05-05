@@ -5,7 +5,7 @@
 export default {
   data() {
     return {
-      image: 'http://www.fillmurray.com/710/210',
+      image: 'https://www.fillmurray.com/710/210',
     };
   },
 };
