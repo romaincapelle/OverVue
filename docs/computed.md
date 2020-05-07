@@ -14,3 +14,5 @@ Computed properties, convenient for simple operations, allow us to define a prop
 #### Output:
 
 <Computed-Property />
+
+##### [See the official Vue.js doc](https://vuejs.org/v2/guide/computed.html#Computed-Properties)

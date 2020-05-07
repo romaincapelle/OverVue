@@ -8,16 +8,19 @@ module.exports = {
   serviceWorker: true,
   themeConfig: {
     logo: '/favicon.svg',
-    nav: [{ text: 'Home', link: '/' }],
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'About', link: '/about' },
+    ],
     sidebar: [
       '/',
-      '/cli',
       '/interpolations',
       '/computed',
       '/v-bind',
       '/links',
-      '/events',
+      '/class',
       '/style',
+      '/events',
       '/conditional',
       '/list',
       '/watch',

@@ -1,34 +1,4 @@
-# Class & Style Binding
-
-## Class Binding
-
-#### Input:
-
-<<< @/docs/.vuepress/components/Style/ClassBindingInline.vue{2-4,10}
-
-#### Output:
-
-<Style-ClassBindingInline />
-
-## Class Binding Using Objects
-
-#### Input:
-
-<<< @/docs/.vuepress/components/Style/ClassBindingUsingObjects.vue{1}
-
-#### Output:
-
-<Style-ClassBindingUsingObjects />
-
-## Class Binding Using names
-
-#### Input:
-
-<<< @/docs/.vuepress/components/Style/ClassBindingNames.vue{1}
-
-#### Output:
-
-<Style-ClassBindingNames />
+# Directive Style Binding
 
 ## Style Binding as Object
 
@@ -49,3 +19,5 @@
 #### Output:
 
 <Style-StyleComputed />
+
+##### [See the official Vue.js doc](https://vuejs.org/v2/guide/class-and-style.html)

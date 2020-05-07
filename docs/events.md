@@ -1,15 +1,14 @@
-# Events Binding
+# Directive v-on (events)
 
-To dynamically bind a link in a vue template use `v-bind:href` or the shortcut `:href`
+Use the v-on directive to listen to DOM events.
+You can chain a key modifier like .enter
 
 #### Input:
 
 <<< @/docs/.vuepress/components/Events/Events.vue{3,6,17-19}
 
-::: tip Shorthand
-Use "@" or "v-on" and then the event name
-:::
-
 #### Output:
 
 <Events-Events />
+
+##### [See the official Vue.js Doc](https://vuejs.org/v2/guide/events.html?)

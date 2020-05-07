@@ -1,4 +1,4 @@
-# Conditionals
+# Directive v-if Conditional
 
 ## Conditional v-if/v-else
 
@@ -43,3 +43,5 @@ Generally speaking, v-if has higher toggle costs while v-show has higher initial
 #### Output:
 
 <Conditional-Js />
+
+##### [See the official Vue.js doc](https://vuejs.org/v2/guide/conditional.html)

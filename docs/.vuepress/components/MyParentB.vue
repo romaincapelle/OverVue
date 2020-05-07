@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>First Name: {{ name }}</p>
-    <MyChildB :name="name"></MyChildB>
+    <p>Parent component - Name: {{ parentValue }}</p>
+    <myChildB v-model="parentValue"></myChildB>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   data: function() {
     return {
-      name: 'Carole',
+      parentValue: '',
     };
   },
 };

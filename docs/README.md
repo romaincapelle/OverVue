@@ -1,17 +1,63 @@
 # OverVue.dev
 
-## What is OverVue.dev ?
+OverVue.dev is a way to quickly grab pieces of code covering the core concepts of Vue.js. It is meant to be a usefull tool for people learning Vue.Js and ot be use while following along with a tutorial. More info in [the about](/about) section. Let's start with some common CLI commands.
 
-I build this website (using [VuePress](https://vuepress.vuejs.org/)) as I was starting my journey with [Vue.js](https://vuejs.org/) for two reasons:
+## Vue CLI
 
-- Learning the different parts of Vue.js
-- Quickly find `code snippets` covering basic concepts of Vue.js.
+### Create a project:
 
-## About me
+```
+vue create hello-world
+```
 
-My Name is Romain Capelle. Born in the verdant prairies of Northern France, now based in the United States, I still inhale cheese and escargot. For more info, check out my [Personal Website](https://www.romaincapelle.com)
+or if you prefet a GUI:
 
-## Shoutouts
+```
+vue ui
+```
 
-To my friend [Ted](https://bit.ly/2VQAtxp) for introducing me to Vue and getting me started with it.
-I also wanted to thank Maximilian Schwarzmüller for [his amazing course on Vue and Vuex](https://acad.link/vuejs) that you can also find on [Udemy](https://www.udemy.com/course/vuejs-2-the-complete-guide/). I would advise any newcomers to the world of vue.js to get a look at his tutorials. This website was built following along with his course.
+---
+
+### Install dependencies
+
+```
+npm install
+```
+
+---
+
+### Run local server
+
+```
+npm run serve
+```
+
+---
+
+### Build for production
+
+```
+npm run build
+```
+
+## VuePress
+
+I am including VuePress commands since this very website was made using VuePress.vue inspect
+
+### Run Server
+
+```
+yarn docs:dev
+```
+
+[localhost:8080](http://localhost:8080/)
+
+---
+
+### Build for production
+
+```
+yarn docs:build
+```
+
+##### [See the official Vue.js CLI doc](https://cli.vuejs.org/guide/prototyping.html)

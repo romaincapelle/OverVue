@@ -1,6 +1,6 @@
-# Lists
+# Directive v-for Lists
 
-## Using v-for without index
+## v-for without index
 
 #### Input:
 
@@ -10,7 +10,7 @@
 
 <Lists-Withoutindex />
 
-## Using v-for with index
+## v-for with index
 
 #### Input:
 
@@ -20,7 +20,7 @@
 
 <Lists-Withindex />
 
-## Using v-for on objects
+## v-for on objects
 
 #### Input:
 
@@ -30,7 +30,7 @@
 
 <Lists-Onobjects />
 
-## Using v-for on Objects and nested loop
+## v-for on Objects and nested loop
 
 #### Input:
 
@@ -40,7 +40,7 @@
 
 <Lists-NestedLoop />
 
-## Using v-for to loop though integers
+## v-for to loop though integers
 
 #### Input:
 
@@ -49,3 +49,5 @@
 #### Output:
 
 <Lists-LoopThoughIntegers />
+
+##### [See the official Vue.js doc](uuuuhttps://vuejs.org/v2/guide/list.htmluuuuu)

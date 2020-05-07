@@ -1,11 +1,21 @@
 <template>
   <div class="child">
-    <p>As prop from parent: {{ name }}</p>
+    <div>Child component</span>
+    <input
+      type="text"
+      v-bind:value="value"
+      v-on:input="updateValue($event.target.value)"
+      placeholder="Type name"/>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['name'],
+  methods: {
+    updateValue: function(value) {
+      this.$emit('input', value);
+    },
+  },
 };
 </script>
