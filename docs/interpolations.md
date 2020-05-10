@@ -2,8 +2,6 @@
 
 ## Interpolate text
 
-### Basic:
-
 #### Input:
 
 <<< @/docs/.vuepress/components/Interpolation/Text.vue{2,8}

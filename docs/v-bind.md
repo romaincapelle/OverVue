@@ -1,4 +1,4 @@
-# Directive v-bind
+# v-bind
 
 To bind a link in a vue template, use `v-bind:href` or the shortcut `:href`
 

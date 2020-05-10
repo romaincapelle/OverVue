@@ -1,6 +1,6 @@
 # OverVue.dev
 
-OverVue.dev is a way to quickly grab pieces of code covering the core concepts of Vue.js. It is meant to be a usefull tool for people learning Vue.Js and ot be use while following along with a tutorial. More info in [the about](/about) section. Let's start with some common CLI commands.
+OverVue.dev is a way to quickly grab pieces of code covering the core concepts of Vue.js. More info in [the about](/about) section. Let's start with some common CLI commands.
 
 ## Vue CLI
 

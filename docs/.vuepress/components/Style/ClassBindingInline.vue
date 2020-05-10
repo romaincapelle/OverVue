@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="foo = !foo" :class="{ cool: foo }">
+    <button @click="active = !active" :class="{ coolBorder: active }">
       Click for Dotted lines
     </button>
   </div>
@@ -9,14 +9,14 @@
 export default {
   data: function() {
     return {
-      foo: false,
+      active: false,
     };
   },
 };
 </script>
 
 <style scoped>
-.cool {
+.coolBorder {
   border: dotted 1px;
 }
 </style>

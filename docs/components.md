@@ -1,11 +1,13 @@
-# Components Communication
+# Passing data though components
+
+First let see how to import a component and pass a string
 
 ## Import a component
 
-```Javascript {3,8,11-13}
+```Vue {3,8,11-13}
 <template>
   <div>
-    <HelloWorld msg="Hello"/>
+    <HelloWorld msg="I like Aussies"/>
   </div>
 </template>
 
@@ -18,10 +20,11 @@ export default {
   }
 }
 </script>
-
 ```
 
 ## Passing data to Child
+
+Now let's see how to pass data from parent to child component.
 
 #### Input Parent:
 
@@ -37,6 +40,8 @@ export default {
 
 ## Passing data to Parent
 
+Now let's see how to pass data from Child to Parent component.
+
 #### Input Parent:
 
 <<< @/docs/.vuepress/components/MyParentB.vue{6,14}
@@ -51,13 +56,16 @@ export default {
 
 ## Sync data Parent/Child
 
+To pass data parents to Child, you can sync the data.
+You cannot pass data from child to sibling component directly, without passing the data though an event but or using [Vuex](/vuex)
+
 #### Input Parent:
 
-<<< @/docs/.vuepress/components/MyParentSync.vue{6,12}
+<<< @/docs/.vuepress/components/MyParentSync.vue{3-4,12}
 
 #### Input Child:
 
-<<< @/docs/.vuepress/components/MyChildSync.vue{10-16,18-21}
+<<< @/docs/.vuepress/components/MyChildSync.vue{4,10-16,18-21}
 
 #### Output:
 

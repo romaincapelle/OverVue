@@ -1,4 +1,4 @@
-# Directive v-on (events)
+# Events / v-on
 
 Use the v-on directive to listen to DOM events.
 You can chain a key modifier like .enter

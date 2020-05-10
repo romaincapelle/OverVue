@@ -5,7 +5,7 @@
 export default {
   data() {
     return {
-      image: 'https://source.unsplash.com/collection/8647859/710x410',
+      image: 'https://source.unsplash.com/collection/3336412/710x710',
     };
   },
 };

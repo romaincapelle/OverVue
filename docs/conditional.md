@@ -1,6 +1,8 @@
-# Directive v-if Conditional
+# Conditional / v-if
 
 ## Conditional v-if/v-else
+
+Using "v-if, v-else-if, v-else", the false ones will be "rendered out" of the DOM entirely.
 
 #### Input:
 
@@ -12,6 +14,8 @@
 
 ## Conditional using a template
 
+Use v-if on a template, it won't be rendered as a div that isn't necessarily needed.
+
 #### Input:
 
 <<< @/docs/.vuepress/components/Conditional/Template.vue{11-15,23}
@@ -21,6 +25,8 @@
 <Conditional-Template />
 
 ## Conditional using v-show
+
+Use V-Show to keep data in the DOM with a "display:none"
 
 #### Input:
 
