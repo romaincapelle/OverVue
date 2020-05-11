@@ -1,3 +1,9 @@
+.custom-block
+  &.tip
+    background-color: $codeBgColor
+
+/// General Styling
+
 html, body, .navbar, .sidebar, .links, .nav-dropdown {
   background-color: #100d23 !important;
 }
@@ -14,6 +20,18 @@ p {
     line-height: 27px !important;
 }
 
+
+/// Sidebar Styling
+.sidebar > .sidebar-links > li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+.sidebar-sub-headers a.sidebar-link {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+
+/// Code Block Styling
 [id*="output"] + p, [id*="output"] + div{
   background-color: #1e1d45;
     padding: 2%;
@@ -32,9 +50,12 @@ a.sidebar-link.active, a.sidebar-link.hover {
     box-shadow: #f09 0px 0px 7px;
 }
 
-.theme-default-content:not(.custom) > h4 {
-    margin-bottom: 16px;
+p code {
+  background-color:  #1e1d45 !important;
 }
+
+
+/// Logo
 
 span.site-name {
    color: #00ff00 !important;
@@ -44,10 +65,9 @@ span.site-name:hover {
   text-shadow: rgba(0, 255, 0, 1) 0px 0px 10px;
 }
 
-p code {
-  background-color:  #1e1d45 !important;
-}
+/// Components
 
+// Button
 button {
     padding: 10px 20px;
     background-color: #1e1d45;
@@ -68,6 +88,7 @@ button:hover {
     box-shadow: rgba(0, 255, 0, 0.6) 0px 0px 7px;
 }
 
+// Input
 input {
     cursor: text;
     width: 10rem;
@@ -89,9 +110,7 @@ input[type="text"],input[type="number"],  {
     color: #1e1d45;
 }
 
-.custom-block
-  &.tip
-    background-color: $codeBgColor
+
 
 // Toggle Switch
 input.switch, input.switch-template, input.switchShow {
@@ -138,3 +157,10 @@ input:checked + label:after {
 .child>div {
       padding: 15px 5px;
     }
+
+
+/// Pages styling
+
+.theme-default-content:not(.custom) > h4 {
+    margin-bottom: 16px;
+}

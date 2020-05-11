@@ -1,21 +1,21 @@
 # Vuex
 
-## Using Getters
+## State
 
-#### Input: (.vue file)
+States in Vuex follow the same rules as the data in a Vue instance.
 
-```Vue {3,11}
+#### Input
+
+```Vue {2,9}
 <template>
-    <div>
-        <p>Your username is: {{ username }}</p>
-    </div>
+  <p>The best ice cream flavor is "{{ flavor }}"</p>
 </template>
 
 <script>
 export default {
   computed: {
-    username () {
-        return this.$store.state.username
+    flavor () {
+        return this.$store.state.flavor
     }
   }
 };
@@ -24,7 +24,7 @@ export default {
 
 #### Input: (store.js)
 
-```js {9,13-15}
+```js {8}
 import Vue from 'vue';
 import Vuex from 'vuex';
 
@@ -32,29 +32,71 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // Statesin Vuex follow the same rules as the data in a Vue instance
-    username: 'BenAfleckIsAnOkActor',
+    flavor: 'Salted Caramel',
+  },
+});
+```
+
+#### Output
+
+<p>The best ice-cream flavor is "Salted Caramel".</p>
+
+## Getters
+
+#### Input: (.vue file)
+
+```Vue {3,10-12}
+<template>
+  <div>
+    <li v-for="videoGame in videoGames" :key="videoGame">{{ videoGame.name }}</li>
+  </div>
+</template>
+
+<script>
+export default {
+  computed: {
+    videoGames() {
+      return this.$store.getters.videoGames;
+    },
+  },
+};
+</script>
+```
+
+#### Input: (store.js)
+
+```js {8-12,15-17}
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+  state: {
+    videoGames: [
+      { id: 1, name: 'Mario Bros', finnished: true },
+      { id: 2, name: 'Zelda', finnished: false },
+      { id: 2, name: 'Metal Gear Solid', finnished: true },
+    ],
   },
   getters: {
-    // Getters are like computed properties for stores
-    username: (state) => {
-      return state.username;
-    },
+    videoGames: (state) =>
+      state.videoGames.filter((videoGames) => videoGames.finnished),
   },
 });
 ```
 
 #### Output:
 
-<p>Your username is: BenAfleckIsAnOkActor</p>
+<div><li> Mario Bros </li><li> Metal Gear Solid </li></div>
 
 # Communication with VUEX
 
-## Using mapGetters
+### Using mapGetters
 
 #### Input: (.vue file)
 
-```Vue {3,8,13-15}
+```Vue {3,8,12-15}
 <template>
     <div>
         <p>Your username is: {{ username }}</p>
@@ -66,7 +108,6 @@ import { mapGetters } from 'vuex'
 
 export default {
   computed: {
-    // mix the getters into computed with object spread operator
     ...mapGetters([
       'username',
       // ...
@@ -78,7 +119,7 @@ export default {
 
 #### Input: (store.js)
 
-```js {9, 13-15}
+```js {8,10-14}
 import Vue from 'vue';
 import Vuex from 'vuex';
 
@@ -86,11 +127,9 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // Statesin Vuex follow the same rules as the data in a Vue instance
     username: 'BenAfleckIsAnOkActor',
   },
   getters: {
-    // Getters are like computed properties for stores
     username: (state) => {
       return state.username;
     },
@@ -102,13 +141,19 @@ export default new Vuex.Store({
 
 <p>Your username is: BenAfleckIsAnOkActor</p>
 
-## Using Actions and Mutations
+## Actions and Mutations
+
+The only way to actually change state in a Vuex store is by committing a mutation.
+
+Actions are similar to mutations, the differences being that:
+Instead of mutating the state, actions commit mutations.
+Actions can contain arbitrary asynchronous operations.
 
 ### Grabbing the Whole context
 
 #### Input: (.vue file) {}
 
-```Vue
+```Vue {3-4,14,17-19}
 <template>
   <div>
     <p>Counter: {{ stringCounter }}</p>
@@ -135,7 +180,7 @@ export default {
 
 #### Input: (store.js)
 
-```Javascript
+```js {8,11-13,16-18,21-23}
 import Vue from 'vue';
 import Vuex from 'vuex';
 
@@ -143,7 +188,6 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // Follows the same rules as the data in a Vue instance
     counter: 1,
   },
   getters: {
@@ -152,14 +196,11 @@ export default new Vuex.Store({
     },
   },
   mutations: {
-    // CANNOT be As Asynchronous
     increment: (state) => {
       state.counter++;
     },
   },
   actions: {
-    // CAN be Asynchronous
-    // Here we grab the whole context
     increment: (context) => {
       context.commit('increment');
     },
@@ -175,7 +216,7 @@ export default new Vuex.Store({
 
 #### Input: (.vue file)
 
-```Vue
+```Vue {3-4,14,17}
 <template>
   <div>
     <p>Counter: {{ stringCounter }}</p>
@@ -192,9 +233,7 @@ export default {
     ...mapGetters(['stringCounter']),
   },
   methods: {
-    ...mapActions([
-      'decrement',
-    ]),
+    ...mapActions(['decrement']),
   },
 };
 </script>
@@ -202,7 +241,7 @@ export default {
 
 #### Input: (store.js)
 
-```Javascript
+```js {8,11-13,16-18,21-23}
 import Vue from 'vue';
 import Vuex from 'vuex';
 
@@ -210,34 +249,24 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // Follows the same rules as the data in a Vue instance
     counter: 100,
   },
   getters: {
-    // Computed properties for stores
     stringCounter: (state) => {
       return state.counter + 'click';
     },
   },
   mutations: {
-    // CANNOT be As Asynchronous
-    //The only way to actually change state in a Vuex store is by committing a mutation.
     decrement: (state) => {
       state.counter--;
     },
   },
   actions: {
-    // CAN be Asynchronous
-    // Actions are similar to mutations, the differences being that:
-    // Actions need to commit to mutation
-    //  Action can GRAB the only the commit
     decrement: ({ commit }) => {
       commit('decrement');
     },
   },
-  modules: {},
 });
-
 ```
 
 #### Output:
@@ -248,7 +277,7 @@ export default new Vuex.Store({
 
 #### Input: (.vue file)
 
-```Vue
+```Vue {3-4,14,17}
 <template>
   <div>
     <p>{{ stringCounter }}</p>
@@ -273,7 +302,7 @@ export default {
 
 #### Input: (store.js)
 
-```Javascript
+```js {8,11-13,16-18,21-25}
 import Vue from 'vue';
 import Vuex from 'vuex';
 
@@ -281,26 +310,19 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // Follows the same rules as the data in a Vue instance
     counter: 100,
   },
   getters: {
-    // Computed properties for stores
     stringCounter: (state) => {
       return state.counter + 'click';
     },
   },
   mutations: {
-    // CANNOT be As Asynchronous
-    //The only way to actually change state in a Vuex store is by committing a mutation.
     reset: (state) => {
       state.counter += 1;
     },
   },
   actions: {
-    // CAN be Asynchronous
-    //Actions are similar to mutations, the differences being that:
-    //Actions need to commit to mutation
     addOne: ({ commit }) => {
       setTimeout(() => {
         commit('reset');
