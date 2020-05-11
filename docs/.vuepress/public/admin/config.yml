@@ -1,21 +1,15 @@
 backend:
   name: github
   repo: romaincapelle/Overvue
-  branch: master
-media_folder: '.vuepress/public/'
-public_folder: '../../'
-display_url: https://overvue.dev/
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: 'docs/.vuepress/public/images'
+public_folder: 'docs/.vuepress/dist/'
 collections:
   - name: 'doc' # Used in routes, e.g., /admin/collections/blog
     label: 'Doc' # Used in the UI
-    folder: 'lessons' # The path to the folder where the documents are stored
+    folder: 'docs' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    show_preview_links: true
     fields: # The fields for each document, usually in front matter
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Featured Image', name: 'image', widget: 'image' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Categories', name: 'categories', widget: 'list' }
