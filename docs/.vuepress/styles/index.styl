@@ -92,6 +92,11 @@ button {
 
 }
 
+button.large {
+    min-width: 50%;
+    margin: 1rem auto;
+}
+
 button:focus {outline:0;}
 
 button:hover {
@@ -107,42 +112,47 @@ input {
     cursor: text;
     width: 10rem;
     height: 2rem;
-    color: #1e1d45 !important;
+    color: white;
+    background-color: #1e1d45;
     display: inline-block;
-    border: 1px solid #404040;
+    border: 1px solid white;
     border-radius: 2rem;
     font-size: 0.9rem;
     line-height: 2rem;
-    padding: 0 0.5rem 0 2rem;s
+    padding: 0 0.5rem 0 2rem;
     outline: none;
     transition: all 0.2s ease;
-    background: #fff 0.6rem 0.5rem no-repeat;
     background-size: 1rem;
     margin: 5px 0px;
+    min-width: 50%;
 }
 
-input[type="text"],input[type="number"],  {
-    color: #1e1d45;
-}
 
 // Text area
 textarea, {
+    border-radius: 2rem;
     min-width: 90%;
     margin: 0 auto;
     min-height: 150px;
     line-height: 28px;
     font-size: 17px;
     padding: 3%;
-    color: rgba(0, 255, 0, 1);
+    color: white ;
     background-color: #1e1d45;
-    outline: 1px solid rgba(0, 255, 0, 1);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    border: 1px solid white;
+    
 }
 
-textarea:focus {
-    outline: 1px solid white;
+textarea:focus, input:focus {
+    border-radius: 2rem;
+    border: 1px solid #0f0;
+    outline: none;
+    box-shadow: #0f0 0px 0px 7px;
+    color: #0f0;
 }
 
 legend {
@@ -233,4 +243,10 @@ input:checked + label:after {
 
 .theme-default-content:not(.custom) > h4 {
     margin-bottom: 16px;
+}
+
+// contact page
+
+.hidden {
+    display: none;
 }

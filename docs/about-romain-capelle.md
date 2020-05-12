@@ -2,7 +2,7 @@
 
 ## About Romain Capelle
 
-My Name is Romain Capelle. Born in the verdant prairies of Northern France, now based in the United States, I still inhale cheese and escargot. For more info, check out my [Personal Website](https://www.romaincapelle.com) / Feel free to contact me at [romain@romaincapelle.com](mailto:romain@romaincapelle.com)
+My Name is Romain Capelle. Born in the verdant prairies of Northern France, now based in the United States, I still inhale cheese and escargot. For more info, check out my [Personal Website](https://www.romaincapelle.com) / and [feel free to contact me](/contact-romain-capelle)
 
 ## Shoutouts
 

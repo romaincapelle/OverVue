@@ -18,6 +18,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about-romain-capelle' },
+      { text: 'Contact', link: '/contact-romain-capelle' },
     ],
     sidebarDepth: 4,
     sidebar: [
