@@ -33,7 +33,7 @@ To bind a link in a vue template, use `v-bind:href` or the shortcut `:href`
 <Directive-Links />
 
 ::: warning
-To link to a different "page" of the SPA, <ins>[use Vue Router](/router)</ins>
+To link to a different "page" of the SPA, <ins>[use Vue Router](/vuejs-router)</ins>
 :::
 
 [See the official Vue.js doc](https://vuejs.org/v2/guide/syntax.html#Arguments)
