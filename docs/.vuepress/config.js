@@ -45,15 +45,5 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
-    [
-      'link',
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Inconsolata&display=swap',
-      },
-    ],
-  ],
+  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
 };
