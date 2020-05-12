@@ -13,4 +13,4 @@ I built this website (using [VuePress](https://vuepress.vuejs.org/)) as I was st
 
 The Official [Vue Documentation](https://vuejs.org/v2/guide/) is awesome, arguably the best JS framework doc out there.
 
-Overvue.dev is just meant to cover quickly the core concept of Vue. It's an easy way for me to grab some snippets, so I figured I would share it with you. I linked the official doc on each page. I also organized it the way made sense to me. I welcome and encourage any feedback.
+Overvue.dev is just meant to cover quickly the core concept of Vue. It's an easy way for me to grab some snippets, so I figured I would share it with you. I linked the official doc on each page. I also organized it the way made sense to me. [I welcome and encourage any feedback: [romain@romaincapelle.com](mailto:romain@romaincapelle.com)
