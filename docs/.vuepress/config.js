@@ -9,13 +9,12 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        'ga': 'UA-166308837-1' // UA-00000000-0
-      }
-    ]
-  ]
+        ga: 'UA-166308837-1', // UA-00000000-0
+      },
+    ],
+  ],
   themeConfig: {
     logo: '/favicon.svg',
-    search: false,
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },
