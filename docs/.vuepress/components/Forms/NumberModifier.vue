@@ -1,9 +1,9 @@
 <template>
   <div>
     <form>
-      <p v-if="age">Your age is a {{ ageType }}
-      <p v-else>The age won't be a string.</p>
-      <label for="age">age: </label>
+      <p v-if="age">Your age is a {{ ageType }}, it's {{ age }}.
+      <p v-else>Your age won't be a string.</p>
+      <label for="age">My age: </label>
       <input v-model.number="age" type="number"></input><br/>
     </form>
     </div>
