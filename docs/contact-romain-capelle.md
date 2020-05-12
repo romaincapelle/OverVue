@@ -15,7 +15,6 @@ I welcome and encourage any feedback.
     <p class="hidden">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
-    <div data-netlify-recaptcha="true"></div>
   <p>
     <button class="large" type="submit">Send</button>
   </p>
