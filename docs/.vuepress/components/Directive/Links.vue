@@ -1,13 +1,13 @@
 <template>
   <div>
-    <a :href="link" target="blank">Link to Vue Doc</a>
+    <a :href="link" target="blank">Link to my Twitter</a>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      link: 'https://vuejs.org/v2/guide/',
+      link: 'https://twitter.com/RomainCapelle',
     };
   },
 };

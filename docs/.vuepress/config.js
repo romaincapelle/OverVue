@@ -8,6 +8,7 @@ module.exports = {
   serviceWorker: true,
   themeConfig: {
     logo: '/favicon.svg',
+    search: false,
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },

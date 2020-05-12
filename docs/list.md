@@ -50,4 +50,4 @@
 
 <Lists-LoopThoughIntegers />
 
-##### [See the official Vue.js doc](uuuuhttps://vuejs.org/v2/guide/list.htmluuuuu)
+##### [See the official Vue.js doc](uuuuhttps://vuejs.org/v2/guide/list.html)

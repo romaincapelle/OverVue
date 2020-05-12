@@ -1,6 +1,6 @@
-# Bind an HTML attribute / v-bind
+# Bind HTML attributes / v-bind
 
-Use "v-bind" ( or just ":") to bind an html any attribute like "src", "href"...
+Use `v-bind:` or `:` to bind an html any attribute like "src", "href"...
 
 ## Bind an image
 
@@ -20,8 +20,6 @@ Use :src instead of v-bind:src
 
 <Directive-Vbind />
 
-##### [See the official Vue.js doc](https://vuejs.org/v2/guide/syntax.html#Arguments)
-
 ## Bind a link href
 
 To bind a link in a vue template, use `v-bind:href` or the shortcut `:href`
@@ -38,4 +36,4 @@ To bind a link in a vue template, use `v-bind:href` or the shortcut `:href`
 To link to a different "page" of the SPA, <ins>[use Vue Router](/router)</ins>
 :::
 
-##### [See the official Vue.js doc](uuuuuuuuu)
+[See the official Vue.js doc](https://vuejs.org/v2/guide/syntax.html#Arguments)

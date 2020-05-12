@@ -32,4 +32,4 @@ You can use simple JS expression:
 
 <Interpolation-Js />
 
-##### [See the official Vue.js doc](uuuuuuuuu)
+[See the official Vue.js doc](uuuuuuuuu)

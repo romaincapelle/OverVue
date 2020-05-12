@@ -1,4 +1,4 @@
-# Forms / v-bind
+# Forms / v-model & 2-Way Binding
 
 ## Basic input
 

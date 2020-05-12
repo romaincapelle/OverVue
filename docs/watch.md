@@ -13,4 +13,4 @@ Watch is most useful when you want to perform asynchronous in response to changi
 
 <Watch-Watch />
 
-##### [See the official Vue.js doc](https://vuejs.org/v2/guide/computed.html#Watchers)
+[See the official Vue.js doc](https://vuejs.org/v2/guide/computed.html#Watchers)

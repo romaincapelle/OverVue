@@ -38,6 +38,8 @@ npm run serve
 npm run build
 ```
 
+[See the official Vue.js CLI doc](https://cli.vuejs.org/guide/prototyping.html)
+
 ## VuePress
 
 Since this very website was made using VuePress.vue, I am including those commands.
@@ -68,4 +70,4 @@ yarn docs:dev
 yarn docs:build
 ```
 
-##### [See the official Vue.js CLI doc](https://cli.vuejs.org/guide/prototyping.html)
+[See the official VuePress doc](https://v1.vuepress.vuejs.org/guide/getting-started.html)
