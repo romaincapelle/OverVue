@@ -1,7 +1,9 @@
 {
   "license": "BSD-3-Clause",
   "devDependencies": {
-    "vuepress": "^1.4.1"
+    "@vuepress/plugin-google-analytics": "^1.5.0",
+    "vuepress": "^1.4.1",
+    "vuepress-plugin-one-click-copy": "^1.0.2"
   },
   "author": {
     "name": "Romain Capelle",

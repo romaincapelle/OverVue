@@ -5,7 +5,14 @@ module.exports = {
     '/': { lang: 'en-US' },
     //'/fr/': { lang: 'Franglais' },
   },
-  serviceWorker: true,
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-166308837-1' // UA-00000000-0
+      }
+    ]
+  ]
   themeConfig: {
     logo: '/favicon.svg',
     search: false,
