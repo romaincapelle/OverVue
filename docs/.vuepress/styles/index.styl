@@ -2,6 +2,10 @@
   &.tip
     background-color: $codeBgColor
 
+.custom-block.warning {
+    color: white;
+}
+
 /// General Styling
 
 html, body, .navbar, .sidebar, .links, .nav-dropdown {
@@ -20,6 +24,10 @@ p {
     line-height: 27px !important;
 }
 
+li {
+    line-height: 23px;
+}
+
 
 /// Sidebar Styling
 .sidebar > .sidebar-links > li:not(:first-child) {
@@ -32,13 +40,19 @@ p {
 }
 
 /// Code Block Styling
-[id*="output"] + p, [id*="output"] + div{
+[id*="output"] + p, [id*="output"] + div,{
   background-color: #1e1d45;
     padding: 2%;
     border: 1px solid #00ff00;
     box-shadow: rgba(0,255,0,0.6) 0px 0px 7px
     margin-top: 16px;
     margin-bottom: 50px;
+}
+
+/// Code Block Styling
+[id*="in-the-dom"] + p, [id*="in-the-dom"] + div,{
+  background-color: #1e1d45;
+    box-shadow: #1a00ff 0px 0px 7px;
 }
 
 a.sidebar-link.active, a.sidebar-link.hover {
@@ -104,12 +118,44 @@ input {
     transition: all 0.2s ease;
     background: #fff 0.6rem 0.5rem no-repeat;
     background-size: 1rem;
+    margin: 5px 0px;
 }
 
 input[type="text"],input[type="number"],  {
     color: #1e1d45;
 }
 
+// Text area
+textarea {
+    min-width: 90%;
+    margin: 0 auto;
+    min-height: 150px;
+    line-height: 28px;
+    font-size: 17px;
+    padding: 3%;
+    color: rgba(0, 255, 0, 1);
+    background-color: #1e1d45;
+    outline: 1px solid rgba(0, 255, 0, 1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea:focus {
+    outline: 1px solid white;
+}
+
+// Checkbox
+
+input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 12px;
+}
+
+input:checked + label {
+    color: #1e1d45;
+}
 
 
 // Toggle Switch

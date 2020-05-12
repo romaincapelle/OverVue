@@ -1,13 +1,89 @@
-# Forms
+# Forms / v-bind
 
-## Using v-for without index
+## Basic input
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Forms/Basic.vue{3-5,12}
+<<< @/docs/.vuepress/components/Forms/Basic.vue{4-6,16}
 
 #### Output:
 
 <Forms-Basic />
 
-##### [See the official Vue.js doc](uuuuuuuuu)
+## Form Data as an object
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/DataAsObject.vue{4-6,16}
+
+#### Output:
+
+<Forms-DataAsObject />
+
+## Text Area
+
+What will work is to bind the message with v-model.
+Line breaks are taken into account but not automatically rendered.
+You can render line break by using some css.
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/TextArea.vue{5,7,16-18}
+
+#### Output:
+
+<Forms-TextArea />
+
+## Checkbox
+
+The Key to save data from a checkboxes into one array, is to use the same v-model on the input and Vue will bind them into an array.
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/Checkboxes.vue{5,7,9,22}
+
+#### Output:
+
+<Forms-Checkboxes />
+
+## Using modifiers
+
+There are three different modifier in Vue 2.x
+
+### Waiting to complete an input
+
+Use .lazy on v-model to update only when focusing outside of that input
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/LazyModifier.vue{8}
+
+#### Output:
+
+<Forms-LazyModifier />
+
+### Convert input to number
+
+Use .number on v-model to "make sure" the input is of type "number"
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/NumberModifier.vue{7}
+
+#### Output:
+
+<Forms-NumberModifier />
+
+### Trim the input
+
+Use .trim to preven user to input double or triple white space.
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/TrimModifier.vue{7}
+
+#### Output:
+
+<Forms-TrimModifier />
+
+##### [See the official Vue.js doc](https://vuejs.org/v2/guide/forms.html)

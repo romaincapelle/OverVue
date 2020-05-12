@@ -27,7 +27,11 @@ new Vue({
 
 This is how to set up the router itself
 
-```js {}
+Note the `mode: 'history',` on line 22 so that the URL looks "prettier".
+
+[More info on History mode](https://router.vuejs.org/guide/essentials/history-mode.html)
+
+```js {22}
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
@@ -65,17 +69,23 @@ Adding the links and where the routing lives.
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/" exact>
+        Home
+      </router-link>{' '}
+      |<router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
 </template>
 ```
 
-## Active link
+## Router-link
 
-The active link will automatically be binded to the css `class="router-link-active"`.
+Use the router-link for the Navigation Bar
+
+### Active router-link
+
+The active link will automatically be binded to two css `class="router-link-active"`.
 
 ##### Input
 
@@ -88,37 +98,120 @@ The active link will automatically be binded to the css `class="router-link-acti
 </template>
 ```
 
-#### Output
+#### In the Dom:
 
 ```html {2-3}
 <div id="nav">
-  <a href="/" class="router-link-active">Home</a> |
+  <a href="/" class="router-link-active">Home</a>
   <a href="/about" class="router-link-exact-active router-link-active">About</a>
 </div>
 ```
 
-### Exact active link
+### Exact active router-link
 
-To make sure only the current link is active and not it's '/' parent as well, use
+The default active class matching behavior is inclusive match. For example, `<router-link to="/a">` will get this class applied as long as the current path starts with /a/ or is /a.
 
-##### Input {4-5}
+One consequence of this is that `<router-link to="/">` will be active for every route! To force the link into "exact match mode", use the exact prop:
 
-```js
+##### Input
+
+```js {3,6}
 <template>
   <div id="nav">
-    <router-link to="/" exact>
+    <a href="/" class="">
       Home
-    </router-link>{' '}
-    |<router-link to="/about">About</router-link>
+    </a>
+    <a href="/about" class="router-link-exact-active router-link-active">
+      About
+    </a>
   </div>
 </template>
 ```
 
-#### Output
+#### In the Dom:
 
 ```html {3}
 <div id="nav">
-  <a href="/" class="">Home</a> |
-  <a href="/about" class="router-link-exact-active router-link-active">About</a>
+  <a href="/" class=""> Home </a>{' '} |
+  <a href="/about" class="router-link-exact-active router-link-active">
+    About
+  </a>
 </div>
+```
+
+### Render router-link as "li"
+
+Instead of a `<a>Home</a>` we can render a link as a `<li>Home</li>` for instance using the tag attribute.
+
+##### Input
+
+```js {3,6}
+<template>
+  <div id="nav">
+    <router-link to="/" tag="li">
+      Home
+    </router-link>
+    <router-link to="/about" tag="li">
+      About
+    </router-link>
+  </div>
+</template>
+```
+
+#### In the Dom:
+
+```html {2-3}
+<div id="nav">
+  <li href="/">Home</li>
+  <li href="/about">About</li>
+</div>
+```
+
+## Link from within the code
+
+#### Input:
+
+<<< @/docs/.vuepress/components/router/linkWithinCode.vue {2,8-10}
+
+#### Output:
+
+<Router-linkWithinCode />
+
+::: tip
+User $router.replace instead of \$router.push to avoid adding a new entry in the history.
+:::
+
+## Setting Up Dynamic Route Parameters
+
+#### Input: (Vue file)
+
+<<< @/docs/.vuepress/components/router/dynamicLink.vue {3,11,16}
+
+#### Input: (router/index.js file)
+
+```js {4,14-15}
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import User from '../views/User.vue';
+
+Vue.use(VueRouter);
+
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+  },
+  // dynamic segments start with a colon
+  { path: '/user/:id', component: User },
+];
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes,
+});
+
+export default router;
 ```

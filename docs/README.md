@@ -2,62 +2,13 @@
 
 OverVue.dev is a way to quickly grab pieces of code covering the core concepts of Vue.js. More info in [the about](/about) section. Let's start with some common CLI commands.
 
-## Vue CLI
+## What is OverVue.dev ?
 
-### Create a project:
+I build this website (using [VuePress](https://vuepress.vuejs.org/)) as I was starting my journey with [Vue.js](https://vuejs.org/) for two reasons:
 
-```
-vue create hello-world
-```
+- Learning the different parts of Vue.js
+- Quickly find snippets covering basic concepts of Vue.js.
 
-or if you prefet a GUI:
+## What about the official Vue Doc ?
 
-```
-vue ui
-```
-
----
-
-### Install dependencies
-
-```
-npm install
-```
-
----
-
-### Run local server
-
-```
-npm run serve
-```
-
----
-
-### Build for production
-
-```
-npm run build
-```
-
-## VuePress
-
-I am including VuePress commands since this very website was made using VuePress.vue inspect
-
-### Run Server
-
-```
-yarn docs:dev
-```
-
-[localhost:8080](http://localhost:8080/)
-
----
-
-### Build for production
-
-```
-yarn docs:build
-```
-
-##### [See the official Vue.js CLI doc](https://cli.vuejs.org/guide/prototyping.html)
+**The Official Vue doc is amazing**, people say it's arguably the best JS framework doc out there. Overvue.dev is just meant to cover quickly the core concept of Vue, it's an easy way for me to grab some snippets, so I figured I would share it with you. I linked the official doc on each page. I also organized it the way made sense to me. I welcome and encourage any feedback.

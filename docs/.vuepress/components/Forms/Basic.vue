@@ -1,16 +1,10 @@
 <template>
   <div>
     <form>
-      <label for="email">Email</label>
-      <input v-model="userData.email" type="text"></input><br/>
-      <label for="password">Password</label>
-      <input v-model.lazy="userData.password" type="text"></input><br/>
-      <label for="age">Age</label>
-      <input v-model.number="userData.age" type="text"></input><br/>
+      <label for="name">Your name</label>
+      <input v-model="name" type="text"></input><br/>
+      <p>Your name is: {{ name }}</p>
     </form>
-    <hr />
-    <div>
-    <p>{{ userData.email }} - {{ userData.password }} - {{ userData.age }}</p>
     </div>
   </div>
 </template>
@@ -19,11 +13,7 @@
 export default {
   data() {
     return {
-      userData: {
-        email: '',
-        password: '',
-        age: 20,
-      },
+      name :'Allen Glover'
     };
   },
 };

@@ -1,11 +1,11 @@
 <template>
-  <div><img v-bind:src="image" /></div>
+  <div><img :src="imageLink" /></div>
 </template>
 <script>
 export default {
   data() {
     return {
-      image: 'https://source.unsplash.com/collection/3336412/710x710',
+      imageLink: 'https://source.unsplash.com/collection/3336412/710x710',
     };
   },
 };

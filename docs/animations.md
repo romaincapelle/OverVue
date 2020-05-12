@@ -1,3 +1,3 @@
 # Animations
 
-## Coming Soon
+Coming Soon
