@@ -36,6 +36,10 @@ module.exports = {
       '/filters',
       '/mixins',
       '/directives',
+      '/Axios',
+      '/Auth',
+      '/Firebase',
+      '/Deploying',
     ],
   },
   markdown: {

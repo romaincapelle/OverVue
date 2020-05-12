@@ -126,7 +126,7 @@ input[type="text"],input[type="number"],  {
 }
 
 // Text area
-textarea {
+textarea, {
     min-width: 90%;
     margin: 0 auto;
     min-height: 150px;
@@ -145,6 +145,11 @@ textarea:focus {
     outline: 1px solid white;
 }
 
+legend {
+    font-weight: 800;
+    margin-top: 10px;
+}
+
 // Checkbox
 
 input[type='checkbox'] {
@@ -157,6 +162,25 @@ input:checked + label {
     color: #1e1d45;
 }
 
+// Radio
+
+input[type='radio'] {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 12px;
+}
+
+// Select
+.select-css {
+    display: block;
+    font-size: 12px;
+    padding: 0.6em 1.4em 0.5em 0.8em;
+    min-width: 160px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 20px;
+}
 
 // Toggle Switch
 input.switch, input.switch-template, input.switchShow {

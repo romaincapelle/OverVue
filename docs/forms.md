@@ -46,6 +46,28 @@ The Key to save data from a checkboxes into one array, is to use the same v-mode
 
 <Forms-Checkboxes />
 
+## Radio Buttons
+
+To save data from radio buttons, use the same v-model on the input.
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/RadioButtons.vue{5,7,9,22}
+
+#### Output:
+
+<Forms-RadioButtons />
+
+## Select / Dropdown
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/SelectOrDropdown.vue{5,7,9,22}
+
+#### Output:
+
+<Forms-SelectOrDropdown />
+
 ## Using modifiers
 
 There are three different modifier in Vue 2.x
