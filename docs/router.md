@@ -171,7 +171,7 @@ Instead of a `<a>Home</a>` we can render a link as a `<li>Home</li>` for instanc
 
 #### Input:
 
-<<< @/docs/.vuepress/components/router/linkWithinCode.vue {2,8-10}
+<<< @/docs/.vuepress/components/Router/linkWithinCode.vue {2,8-10}
 
 #### Output:
 
@@ -185,7 +185,7 @@ User $router.replace instead of \$router.push to avoid adding a new entry in the
 
 #### Input: (Vue file)
 
-<<< @/docs/.vuepress/components/router/dynamicLink.vue {3,11,16}
+<<< @/docs/.vuepress/components/Router/dynamicLink.vue {3,11,16}
 
 #### Input: (router/index.js file)
 
