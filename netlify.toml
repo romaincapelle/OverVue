@@ -6,9 +6,6 @@
 package = "@netlify/plugin-sitemap"
 
 [[plugins]]
-package = "netlify-plugin-checklinks"
-
-[[plugins]]
   package = "netlify-plugin-inline-source"
 
   # All inputs are optional, so you can omit this section.
