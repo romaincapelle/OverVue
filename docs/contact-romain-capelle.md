@@ -2,7 +2,7 @@
 
 I welcome and encourage any feedback.
 
-<form name="contact" method="POST" data-netlify="true" action="/contact-success">
+<form name="contact" method="POST" data-netlify="true" action="/contact-success.html">
   <p>
     <label>Your Name:</br> <input type="text" name="name" /></label>   
   </p>
