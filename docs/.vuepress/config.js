@@ -1,6 +1,7 @@
 module.exports = {
   title: 'OverVue.dev',
-  description: 'A Quick Approach to Vue.JS core concepts',
+  description:
+    'OverVue.dev is a way to quickly grab snippets covering the core concepts of Vue.js',
   locales: {
     '/': { lang: 'en-US' },
     //'/fr/': { lang: 'Franglais' },

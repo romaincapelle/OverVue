@@ -62,11 +62,11 @@ To save data from radio buttons, use the same v-model on the input.
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Forms/SelectOrDropdown.vue{5,7,9,22}
+<<< @/docs/.vuepress/components/Forms/SelectDropdown.vue{5,7-9,22}
 
 #### Output:
 
-<Forms-SelectOrDropdown />
+<Forms-SelectDropdown />
 
 ## Using modifiers
 
@@ -107,5 +107,43 @@ Use .trim to preven user to input double or triple white space.
 #### Output:
 
 <Forms-TrimModifier />
+
+## How v-model works
+
+```vue {3}
+<template>
+  <div>
+    <input type="text" v-model="userData.email" />
+  </div>
+</template>
+```
+
+is the same as
+
+```vue {5-6}
+<template>
+  <div>
+    <input
+      type="text"
+      :value="userData.email"
+      @click="userData.email = $event.target.value"
+    />
+  </div>
+</template>
+```
+
+## Custom input in forms
+
+#### Input (Parent Component / Form)
+
+<<< @/docs/.vuepress/components/MyParentSwitch.vue{8,16}
+
+#### Input (Child Component/ Custom input)
+
+<<< @/docs/.vuepress/components/SwitchComponent.vue{3-4,10,12-14}
+
+#### Output:
+
+<myParentSwitch />
 
 ##### [See the official Vue.js doc](https://vuejs.org/v2/guide/forms.html)

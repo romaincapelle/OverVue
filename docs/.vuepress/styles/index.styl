@@ -1,6 +1,52 @@
-.custom-block
-  &.tip
-    background-color: $codeBgColor
+/// scroll bar
+
+.navbar, .sidebar{
+    border: 0px ;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #100d23; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00ff00; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1a00ff; 
+}
+
+body {
+    background-color: #100d23;
+}
+
+
+///  Tip and warnings
+
+
+.custom-block.tip {
+    background-color: #1e1d45;
+    border-color: #00ff00;
+}
+
+.custom-block.warning {
+    background-color: #1e1d45;
+    border-color: #f97e72;
+}
+
+
+.custom-block.warning .custom-block-title {
+    color: #f97e72;
+}
+
 
 .custom-block.warning {
     color: white;
@@ -26,7 +72,7 @@ html, body, .navbar, .sidebar, .links, .nav-dropdown {
 
 .suggestions > *:hover{
     border: solid 1px #00ff00!important;
-    box-shadow: rgba(0,255,0,0.6) 0px 0px 7px
+    box-shadow: rgba(0,255,0,0.6) 0px 0px 7px;
 }
 
 .suggestions {
@@ -67,6 +113,8 @@ li {
     box-shadow: rgba(0,255,0,0.6) 0px 0px 7px
     margin-top: 16px;
     margin-bottom: 50px;
+    min-height: 80px;
+    border-radius: 0.7rem;
 }
 
 /// Code Block Styling
@@ -80,8 +128,9 @@ a.sidebar-link.active, a.sidebar-link.hover {
 }
 
 [id*="input"] + div{
-  background-color: #1e1d45;
+    background-color: #1e1d45;
     box-shadow: #f09 0px 0px 7px;
+    border-radius: 0.7rem;
 }
 
 p code {
@@ -107,7 +156,7 @@ button {
     background-color: #1e1d45;
     color: #ffffff;
     border: 1px solid #00ff00
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     margin-bottom: 20px
 
 }
@@ -136,7 +185,7 @@ input {
     background-color: #1e1d45;
     display: inline-block;
     border: 1px solid white;
-    border-radius: 2rem;
+    border-radius: 0.7rem;
     font-size: 0.9rem;
     line-height: 2rem;
     padding: 0 0.5rem 0 2rem;
@@ -150,7 +199,7 @@ input {
 
 // Text area
 textarea, {
-    border-radius: 2rem;
+    border-radius: 0.7rem;
     min-width: 90%;
     margin: 0 auto;
     min-height: 150px;
@@ -168,7 +217,7 @@ textarea, {
 }
 
 textarea:focus, input:focus {
-    border-radius: 2rem;
+    border-radius: 0.7rem;
     border: 1px solid #0f0;
     outline: none;
     box-shadow: #0f0 0px 0px 7px;
@@ -203,13 +252,13 @@ input[type='radio'] {
 // Select
 .select-css {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0.6em 1.4em 0.5em 0.8em;
-    min-width: 160px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+    min-width: 290px;
     margin-top: 20px;
+    background-color: #100d23;
+    color: white;
+    height: 37px;
 }
 
 // Toggle Switch
@@ -220,7 +269,7 @@ label.toggle {
     cursor: pointer;
     display: block;
     border: 1px solid #00ff00;
-    border-radius: 11px;
+    border-radius: 0.7rem;
     width: 40px;
     height: 20px;
     position: relative;
@@ -230,7 +279,7 @@ label.toggle:after {
     content: '';
     background-color: #FFF;
     border: 1px solid #1e1d45;
-    border-radius: 10px;
+    border-radius: 0.7rem;
     width: 18px;
     height: 18px;
     position: absolute;
