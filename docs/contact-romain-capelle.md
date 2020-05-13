@@ -12,9 +12,6 @@ I welcome and encourage any feedback.
   <p>
     <label>Message: <textarea name="message"></textarea></label>
   </p>
-    <p class="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
   <p>
     <button class="large" type="submit">Send</button>
   </p>
