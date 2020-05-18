@@ -1,7 +1,10 @@
 /// scroll bar
 
-.navbar, .sidebar{
-    border: 0px ;
+.sidebar, .navbar {
+    border: 0px;
+}
+ .navbar{
+    border-bottom: 2px  solid #1e1d45;
 }
 
 /* width */
@@ -28,6 +31,7 @@ body {
     background-color: #100d23;
 }
 
+
 ///  Tip and warnings
 
 
@@ -38,12 +42,12 @@ body {
 
 .custom-block.warning {
     background-color: #1e1d45;
-    border-color: #f97e72;
+    border-color: #defe47;
 }
 
 
 .custom-block.warning .custom-block-title {
-    color: #f97e72;
+    color: #defe47;
 }
 
 
@@ -56,6 +60,10 @@ body {
 html, body, .navbar, .sidebar, .links, .nav-dropdown {
   background-color: #100d23 !important;
 }
+
+.search-box {
+    margin-top: -5px;
+    }
 
 .search-box input {
     color: #131313;
@@ -128,7 +136,7 @@ a.sidebar-link.active, a.sidebar-link.hover {
 
 [id*="input"] + div{
     background-color: #1e1d45;
-    box-shadow: #f09 0px 0px 7px;
+    box-shadow: #ff2a6d 0px 0px 7px;
     border-radius: 0.7rem;
 }
 
@@ -299,7 +307,8 @@ input:checked + label:after {
  // Child Component
 
  .child {
-  border: solid 1px #00ff00;
+  border: solid 1px #05D9E8;
+  box-shadow: #d1f7ff 0px 0px 5px;
   padding: 5px 20px;
 }
 .child>div {

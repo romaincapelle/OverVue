@@ -1,3 +1,9 @@
-# Form Validation with Vuelidate ( Soon )
+# Form Validation / Vuelidate
 
-Coming Soon
+#### Input:
+
+<<< @/docs/.vuepress/components/Forms/Basic-Vuelidate.vue{4-6,16}
+
+#### Output:
+
+<Forms-Basic-Vuelidate />
