@@ -6,8 +6,8 @@ export default {
   data() {
     return {
       tigerKing: 26,
-      carolBaskin: 23,
-    };
-  },
-};
+      carolBaskin: 23
+    }
+  }
+}
 </script>

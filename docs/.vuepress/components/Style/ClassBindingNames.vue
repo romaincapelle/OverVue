@@ -7,10 +7,10 @@
 export default {
   data: function() {
     return {
-      BlinkClass: '',
-    };
-  },
-};
+      BlinkClass: ''
+    }
+  }
+}
 </script>
 
 <style scoped>

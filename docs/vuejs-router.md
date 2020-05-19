@@ -215,3 +215,19 @@ const router = new VueRouter({
 
 export default router;
 ```
+
+## Lazy Loading Syntax
+
+```
+const User = () => import('./components/user/User.vue');
+...
+export const routes = [
+    ...,
+    {
+        path: '/user', components: {
+            default: User,
+            ...
+        }
+    }
+];
+```

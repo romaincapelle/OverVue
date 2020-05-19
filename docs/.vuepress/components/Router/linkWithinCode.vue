@@ -8,8 +8,8 @@
 export default {
   methods: {
     goHome: function() {
-      this.$router.push({ path: '/' });
-    },
-  },
-};
+      this.$router.push({ path: '/' })
+    }
+  }
+}
 </script>

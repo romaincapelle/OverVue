@@ -12,17 +12,17 @@
 export default {
   data: function() {
     return {
-      loading: 80,
-    };
+      loading: 80
+    }
   },
   computed: {
     myStyle: function() {
       return {
-        width: this.loading + '%',
-      };
-    },
-  },
-};
+        width: this.loading + '%'
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>

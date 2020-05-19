@@ -9,10 +9,10 @@
 export default {
   data: function() {
     return {
-      active: false,
-    };
-  },
-};
+      active: false
+    }
+  }
+}
 </script>
 
 <style scoped>

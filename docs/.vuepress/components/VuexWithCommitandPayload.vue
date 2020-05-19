@@ -9,8 +9,8 @@
 export default {
   data() {
     return {
-      stringCounter: 2,
-    };
-  },
-};
+      stringCounter: 2
+    }
+  }
+}
 </script>

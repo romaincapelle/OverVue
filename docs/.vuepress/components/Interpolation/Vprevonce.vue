@@ -12,16 +12,16 @@
 export default {
   data: function() {
     return {
-      firstName: 'Joseph',
-    };
+      firstName: 'Joseph'
+    }
   },
   methods: {
     changeFirstName: function() {
-      this.firstName = 'Joe Exotic';
+      this.firstName = 'Joe Exotic'
     },
     resetFirstName: function() {
-      this.firstName = 'Joseph';
-    },
-  },
-};
+      this.firstName = 'Joseph'
+    }
+  }
+}
 </script>

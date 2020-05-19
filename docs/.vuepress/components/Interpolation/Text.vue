@@ -5,8 +5,8 @@
 export default {
   data() {
     return {
-      firstName: 'Joe',
-    };
-  },
-};
+      firstName: 'Joe'
+    }
+  }
+}
 </script>

@@ -13,9 +13,9 @@ export default {
     return {
       persons: [
         { id: '001', Name: 'Joe Exotic', Age: 57 },
-        { id: '002', Name: 'Carole Baskin', Age: 58 },
-      ],
-    };
-  },
-};
+        { id: '002', Name: 'Carole Baskin', Age: 58 }
+      ]
+    }
+  }
+}
 </script>

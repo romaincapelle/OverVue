@@ -11,14 +11,14 @@ export default {
     name: {
       type: String,
       required: true,
-      default: 'JohnDoe',
-    },
+      default: 'JohnDoe'
+    }
   },
   methods: {
     resetName() {
-      var newName = 'Joseph';
-      this.$emit('update:name', newName);
-    },
-  },
-};
+      var newName = 'Joseph'
+      this.$emit('update:name', newName)
+    }
+  }
+}
 </script>

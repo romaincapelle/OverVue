@@ -9,8 +9,8 @@
 export default {
   data: function() {
     return {
-      ingredients: ['Coffee', 'Water', 'Cheese'],
-    };
-  },
-};
+      ingredients: ['Coffee', 'Water', 'Cheese']
+    }
+  }
+}
 </script>

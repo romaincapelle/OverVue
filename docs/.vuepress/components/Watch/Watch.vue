@@ -11,19 +11,19 @@ export default {
   data: function() {
     return {
       counter: 101,
-      opinion: 'Yes I am ok with that',
-    };
+      opinion: 'Yes I am ok with that'
+    }
   },
   watch: {
     counter: function(counter) {
-      var vm = this;
-      vm.opinion = 'Loading...';
+      var vm = this
+      vm.opinion = 'Loading...'
       // setTimemout to
       setTimeout(function() {
-        vm.counter = 101;
-        vm.opinion = 'No, 101 is good';
-      }, 1000);
-    },
-  },
-};
+        vm.counter = 101
+        vm.opinion = 'No, 101 is good'
+      }, 1000)
+    }
+  }
+}
 </script>

@@ -8,13 +8,13 @@
 export default {
   data() {
     return {
-      id: this.$route.params.id,
-    };
+      id: this.$route.params.id
+    }
   },
   methods: {
     toUser: function() {
-      this.$router.push({ path: '/user/:id', component: User });
-    },
-  },
-};
+      this.$router.push({ path: '/user/:id', component: User })
+    }
+  }
+}
 </script>

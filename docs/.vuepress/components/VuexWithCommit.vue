@@ -9,13 +9,13 @@
 export default {
   data() {
     return {
-      stringCounter: 100,
-    };
+      stringCounter: 100
+    }
   },
   computed: {
     doubleCounter: function() {
-      return this.stringCounter * 2;
-    },
-  },
-};
+      return this.stringCounter * 2
+    }
+  }
+}
 </script>

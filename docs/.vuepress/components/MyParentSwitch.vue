@@ -13,8 +13,8 @@
 export default {
   data: function() {
     return {
-      dataSwitch: true,
-    };
-  },
-};
+      dataSwitch: true
+    }
+  }
+}
 </script>

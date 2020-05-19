@@ -12,8 +12,8 @@
 export default {
   data() {
     return {
-      title: 'Sloth are cute',
-    };
-  },
-};
+      title: 'Sloth are cute'
+    }
+  }
+}
 </script>

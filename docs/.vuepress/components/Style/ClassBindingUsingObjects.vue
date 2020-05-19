@@ -10,18 +10,18 @@
 export default {
   data: function() {
     return {
-      foo: false,
-    };
+      foo: false
+    }
   },
   computed: {
     divClasses: function() {
       return {
         cool: this.foo,
-        active: this.foo,
-      };
-    },
-  },
-};
+        active: this.foo
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>

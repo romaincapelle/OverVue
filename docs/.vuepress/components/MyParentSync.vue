@@ -9,8 +9,8 @@
 export default {
   data: function() {
     return {
-      name: 'Joe',
-    };
-  },
-};
+      name: 'Joe'
+    }
+  }
+}
 </script>

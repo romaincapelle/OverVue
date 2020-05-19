@@ -12,10 +12,10 @@
 export default {
   data: function() {
     return {
-      loading: 69,
-    };
-  },
-};
+      loading: 69
+    }
+  }
+}
 </script>
 
 <style scoped>

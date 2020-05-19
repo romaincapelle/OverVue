@@ -9,15 +9,15 @@
 export default {
   data() {
     return {
-      stringCounter: 100,
-    };
+      stringCounter: 100
+    }
   },
   methods: {
     addOne() {
       setTimeout(() => {
-        this.stringCounter++;
-      }, 1000);
-    },
-  },
-};
+        this.stringCounter++
+      }, 1000)
+    }
+  }
+}
 </script>

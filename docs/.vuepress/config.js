@@ -25,6 +25,7 @@ module.exports = {
     sidebar: [
       '/',
       '/vuejs-cli',
+      '/vuejs-vscode',
       '/vuejs-interpolations',
       '/vuejs-computed',
       '/vuejs-watch',
@@ -44,10 +45,10 @@ module.exports = {
       '/vuejs-filters',
       '/vuejs-mixins',
       '/vuejs-directives',
+      '/vuejs-vue-resource',
       '/vuejs-Axios',
       '/vuejs-Auth',
       '/vuejs-Firebase',
-      '/vuejs-Deploying',
     ],
   },
   markdown: {
