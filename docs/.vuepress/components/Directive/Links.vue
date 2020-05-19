@@ -7,8 +7,8 @@
 export default {
   data() {
     return {
-      link: 'https://twitter.com/RomainCapelle',
-    };
-  },
-};
+      link: 'https://twitter.com/RomainCapelle'
+    }
+  }
+}
 </script>

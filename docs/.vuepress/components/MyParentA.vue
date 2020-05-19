@@ -11,8 +11,8 @@
 export default {
   data: function() {
     return {
-      name: 'Carole',
-    };
-  },
-};
+      name: 'Carole'
+    }
+  }
+}
 </script>

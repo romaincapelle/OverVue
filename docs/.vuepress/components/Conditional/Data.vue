@@ -19,8 +19,8 @@
 export default {
   data: function() {
     return {
-      showing: true,
-    };
-  },
-};
+      showing: true
+    }
+  }
+}
 </script>

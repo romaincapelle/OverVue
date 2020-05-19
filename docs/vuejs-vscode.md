@@ -18,21 +18,21 @@ Either in the .eslintrc.js file or package.json (depending on the Vue CLI instal
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
   extends: [
     'plugin:vue/essential',
     'plugin:prettier/recommended', // Add this line
-    '@vue/prettier',
+    '@vue/prettier'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
   parserOptions: {
-    parser: 'babel-eslint',
-  },
-};
+    parser: 'babel-eslint'
+  }
+}
 ```
 
 ### Configuring Prettier
@@ -50,8 +50,8 @@ For instance, to force single quote '' instead of double quote "" and automatica
 ```js
 module.exports = {
   singleQuote: true,
-  semi: false,
-};
+  semi: false
+}
 ```
 
 ## User Settings (json)

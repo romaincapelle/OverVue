@@ -59,7 +59,7 @@ Now let's see how to pass data from Child to Parent component.
 To pass data parents to Child, you can sync the data.
 You cannot pass data from child to sibling component directly, without passing the data though an event but or using [Vuex](/vuejs-vuex)
 
-#### Input Parent:  
+#### Input Parent:
 
 <<< @/docs/.vuepress/components/MyParentSync.vue{3-4,12}
 

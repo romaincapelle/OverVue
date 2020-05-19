@@ -15,8 +15,8 @@
 export default {
   methods: {
     AlertHello: function() {
-      alert('Hello');
-    },
-  },
-};
+      alert('Hello')
+    }
+  }
+}
 </script>

@@ -14,27 +14,27 @@ States in Vuex follow the same rules as the data in a Vue instance.
 <script>
 export default {
   computed: {
-    flavor () {
-        return this.$store.state.flavor
+    flavor() {
+      return this.$store.state.flavor
     }
   }
-};
+}
 </script>
 ```
 
 #### Input: (store.js)
 
 ```js {8}
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    flavor: 'Salted Caramel',
-  },
-});
+    flavor: 'Salted Caramel'
+  }
+})
 ```
 
 #### Output
@@ -48,7 +48,9 @@ export default new Vuex.Store({
 ```Vue {3,10-12}
 <template>
   <div>
-    <li v-for="videoGame in videoGames" :key="videoGame">{{ videoGame.name }}</li>
+    <li v-for="videoGame in videoGames" :key="videoGame">
+      {{ videoGame.name }}
+    </li>
   </div>
 </template>
 
@@ -56,34 +58,34 @@ export default new Vuex.Store({
 export default {
   computed: {
     videoGames() {
-      return this.$store.getters.videoGames;
-    },
-  },
-};
+      return this.$store.getters.videoGames
+    }
+  }
+}
 </script>
 ```
 
 #### Input: (store.js)
 
 ```js {8-12,15-17}
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
     videoGames: [
       { id: 1, name: 'Mario Bros', finnished: true },
       { id: 2, name: 'Zelda', finnished: false },
-      { id: 2, name: 'Metal Gear Solid', finnished: true },
-    ],
+      { id: 2, name: 'Metal Gear Solid', finnished: true }
+    ]
   },
   getters: {
-    videoGames: (state) =>
-      state.videoGames.filter((videoGames) => videoGames.finnished),
-  },
-});
+    videoGames: state =>
+      state.videoGames.filter(videoGames => videoGames.finnished)
+  }
+})
 ```
 
 #### Output:
@@ -98,9 +100,9 @@ export default new Vuex.Store({
 
 ```Vue {3,8,12-15}
 <template>
-    <div>
-        <p>Your username is: {{ username }}</p>
-    </div>
+  <div>
+    <p>Your username is: {{ username }}</p>
+  </div>
 </template>
 
 <script>
@@ -109,32 +111,32 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters([
-      'username',
+      'username'
       // ...
     ])
   }
-};
+}
 </script>
 ```
 
 #### Input: (store.js)
 
 ```js {8,10-14}
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    username: 'BenAfleckIsAnOkActor',
+    username: 'BenAfleckIsAnOkActor'
   },
   getters: {
-    username: (state) => {
-      return state.username;
-    },
-  },
-});
+    username: state => {
+      return state.username
+    }
+  }
+})
 ```
 
 #### Output:
@@ -162,50 +164,48 @@ Actions can contain arbitrary asynchronous operations.
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import { mapActions } from 'vuex';
+import { mapGetters } from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   computed: {
-    ...mapGetters(['stringCounter']),
+    ...mapGetters(['stringCounter'])
   },
   methods: {
-    ...mapActions([
-      'increment',
-    ]),
-  },
-};
+    ...mapActions(['increment'])
+  }
+}
 </script>
 ```
 
 #### Input: (store.js)
 
 ```js {8,11-13,16-18,21-23}
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    counter: 1,
+    counter: 1
   },
   getters: {
-    stringCounter: (state) => {
-      return state.counter + 'click';
-    },
+    stringCounter: state => {
+      return state.counter + 'click'
+    }
   },
   mutations: {
-    increment: (state) => {
-      state.counter++;
-    },
+    increment: state => {
+      state.counter++
+    }
   },
   actions: {
-    increment: (context) => {
-      context.commit('increment');
-    },
-  },
-});
+    increment: context => {
+      context.commit('increment')
+    }
+  }
+})
 ```
 
 #### Output:
@@ -225,48 +225,48 @@ export default new Vuex.Store({
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import { mapActions } from 'vuex';
+import { mapGetters } from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   computed: {
-    ...mapGetters(['stringCounter']),
+    ...mapGetters(['stringCounter'])
   },
   methods: {
-    ...mapActions(['decrement']),
-  },
-};
+    ...mapActions(['decrement'])
+  }
+}
 </script>
 ```
 
 #### Input: (store.js)
 
 ```js {8,11-13,16-18,21-23}
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    counter: 100,
+    counter: 100
   },
   getters: {
-    stringCounter: (state) => {
-      return state.counter + 'click';
-    },
+    stringCounter: state => {
+      return state.counter + 'click'
+    }
   },
   mutations: {
-    decrement: (state) => {
-      state.counter--;
-    },
+    decrement: state => {
+      state.counter--
+    }
   },
   actions: {
     decrement: ({ commit }) => {
-      commit('decrement');
-    },
-  },
-});
+      commit('decrement')
+    }
+  }
+})
 ```
 
 #### Output:
@@ -286,51 +286,51 @@ export default new Vuex.Store({
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import { mapActions } from 'vuex';
+import { mapGetters } from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   computed: {
-    ...mapGetters(['stringCounter']),
+    ...mapGetters(['stringCounter'])
   },
   methods: {
-    ...mapActions(['addOne']),
-  },
-};
+    ...mapActions(['addOne'])
+  }
+}
 </script>
 ```
 
 #### Input: (store.js)
 
 ```js {8,11-13,16-18,21-25}
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    counter: 100,
+    counter: 100
   },
   getters: {
-    stringCounter: (state) => {
-      return state.counter + 'click';
-    },
+    stringCounter: state => {
+      return state.counter + 'click'
+    }
   },
   mutations: {
-    reset: (state) => {
-      state.counter += 1;
-    },
+    reset: state => {
+      state.counter += 1
+    }
   },
   actions: {
     addOne: ({ commit }) => {
       setTimeout(() => {
-        commit('reset');
-      }, 1000);
-    },
+        commit('reset')
+      }, 1000)
+    }
   },
-  modules: {},
-});
+  modules: {}
+})
 ```
 
 #### Output:

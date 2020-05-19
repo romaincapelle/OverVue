@@ -9,18 +9,18 @@ Vue Router is the official router for Vue.js. It is used to add routes to SPAs, 
 Add the router to the Vue Instance
 
 ```js {3,9}
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
-import store from './store';
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-  render: (h) => h(App),
-}).$mount('#app');
+  render: h => h(App)
+}).$mount('#app')
 ```
 
 #### Input (router/index.js)
@@ -32,33 +32,33 @@ Note the `mode: 'history',` on line 22 so that the URL looks "prettier".
 [More info on History mode](https://router.vuejs.org/guide/essentials/history-mode.html)
 
 ```js {22}
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import About from '../views/About.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Home
   },
   {
     path: '/about',
     name: 'About',
-    component: About,
-  },
-];
+    component: About
+  }
+]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes,
-});
+  routes
+})
 
-export default router;
+export default router
 ```
 
 #### Input (App.vue)
@@ -190,30 +190,30 @@ User $router.replace instead of \$router.push to avoid adding a new entry in the
 #### Input: (router/index.js file)
 
 ```js {4,14-15}
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import User from '../views/User.vue';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import User from '../views/User.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Home
   },
   // dynamic segments start with a colon
-  { path: '/user/:id', component: User },
-];
+  { path: '/user/:id', component: User }
+]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes,
-});
+  routes
+})
 
-export default router;
+export default router
 ```
 
 ## Lazy Loading Syntax

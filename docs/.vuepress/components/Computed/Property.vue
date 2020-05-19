@@ -7,13 +7,13 @@ export default {
   data() {
     return {
       firstName: 'Romain',
-      lastName: 'Capelle',
-    };
+      lastName: 'Capelle'
+    }
   },
   computed: {
     fullName: function() {
-      return this.firstName + ' ' + this.lastName;
-    },
-  },
-};
+      return this.firstName + ' ' + this.lastName
+    }
+  }
+}
 </script>

@@ -11,10 +11,10 @@
 export default {
   data() {
     return {
-      showing: true,
-    };
-  },
-};
+      showing: true
+    }
+  }
+}
 </script>
 
 <style scoped>

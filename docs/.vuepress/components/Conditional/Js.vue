@@ -10,8 +10,8 @@
 export default {
   data: function() {
     return {
-      states: '49',
-    };
-  },
-};
+      states: '49'
+    }
+  }
+}
 </script>

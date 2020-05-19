@@ -5,8 +5,8 @@
 export default {
   data() {
     return {
-      imageLink: 'https://source.unsplash.com/collection/1653544/710x710',
-    };
-  },
-};
+      imageLink: 'https://source.unsplash.com/collection/1653544/710x710'
+    }
+  }
+}
 </script>
