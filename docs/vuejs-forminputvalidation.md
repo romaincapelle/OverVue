@@ -49,11 +49,11 @@ export default {
     },
   },
 };
-</script>
+</script>npm
 ```
 
 <iframe width="100%" height="300" src="//jsfiddle.net/b5v4faqf/embedded/js,html,css,result/dark/?bodyColor=321450&accentColor=00ff00&fontColor=100d23&menuColor=f97e72" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 #### Output:
 
-<Forms-Basic-Vuelidate />
+<Forms-Basic-Vuelidate /> 
