@@ -1,5 +1,7 @@
 # Transitions
 
+## Transition Classes
+
 When setting up an transition named `fadeMe` for instance. Vue.js will automatically look for the classes :
 
 `.fadeMe-enter`

@@ -1,6 +1,6 @@
 <template>
   <div :class="BlinkClass">
-    <input v-model="BlinkClass" type="text" placeholder="Try Typing 'Blink'" />
+    <input v-model="BlinkClass" type="text" placeholder="Type 'Blink'" />
   </div>
 </template>
 <script>

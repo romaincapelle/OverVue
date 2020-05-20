@@ -1,6 +1,6 @@
 # CLI
 
-## Vue CLI Basic
+## Vue CLI Common Commands
 
 Create a project
 
@@ -46,21 +46,19 @@ npm run lint
 
 [Customize configuration](https://cli.vuejs.org/config/).
 
-## Vue CLI Advanced
+## Environment Variables
 
-### Environment Variables
-
-#### .env
+### .env
 
 Create a file named `.env` in the root folder of the project and name the variable `VUE_APP_*` in order to be recognized by VUE CLI.
 
-##### Input (.env)
+#### Input (.env)
 
 ```
 VUE_APP_URL=https://some-dev.api.com
 ```
 
-##### Input ( anywhere in vue files)
+#### Input ( anywhere in vue files)
 
 ```js {2,8}
 <template>
@@ -77,11 +75,11 @@ export default {
 </script>
 ```
 
-##### output
+#### output
 
 <p>https://some-dev.api.com</p>
 
-#### Dev / Prod / Testing .env
+### Dev / Prod / Testing .env
 
 Just use those names for development, production and testing and VUE CLI will automatically use the right version.
 
@@ -93,12 +91,12 @@ Name of the files:
 
 `.env.testing`
 
-### Custom Build mode and Environment
+## Custom Build mode and Environment
 
 This is using the vue-cli-service which is automatically included in a Vue project.
 You can create a custom build with in development mode for instance. To do so add a script to package.json
 
-#### Create build folder but with in development mode
+### Create build folder but with in development mode
 
 ```json{5}
 "scripts": {
@@ -115,7 +113,7 @@ To build then run
 npm run build:development
 ```
 
-#### Create custom build with a custom staging mode
+### Create custom build with a custom staging mode
 
 Staging is NOT one of the three build-in mode that offer the vue-cli-service.
 
@@ -136,7 +134,7 @@ To build then run
 npm run build:staging
 ```
 
-### Instant Prototyping
+## Instant Prototyping
 
 Or how to "How to inspect a single component". You can rapidly prototype with just a single Vue file with the vue serve.
 To install globally a vue-cli-service, run `npm install -g @vue/cli-service-global`
@@ -145,40 +143,4 @@ To serve a single file run the command:
 
 ```Shell
 vue serve MyComponent.vue
-```
-
-## VuePress
-
-Since this very website was made using VuePress.vue, I am including those commands.
-
-### Install globally
-
-```shell
-yarn global add vuepress # OR npm install -g vuepress
-```
-
-### Install as a local dependency
-
-```shell
-yarn add -D vuepress # OR npm install -D vuepress
-```
-
-### Run Local Server
-
-```shell
-yarn docs:dev
-```
-
-[localhost:8080](http://localhost:8080/)
-
-### Build for production
-
-```shell
-yarn docs:build
-```
-
-[See the official VuePress doc](https://v1.vuepress.vuejs.org/guide/getting-started.html)
-
-```
-
 ```

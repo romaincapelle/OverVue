@@ -9,7 +9,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  height: 4px;
+    width: 4px;
 }
 
 /* Track */
@@ -20,11 +21,17 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00ff00; 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #00ff00; 
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #00ff00;
+    border-radius: 10px;
 }
 
 body {
@@ -79,7 +86,7 @@ html, body, .navbar, .sidebar, .links, .nav-dropdown {
 
 .suggestions > *:hover{
     border: solid 1px #00ff00!important;
-    box-shadow: rgba(0,255,0,0.6) 0px 0px 7px;
+    box-shadow: rgba(0,255,0,0.6) 0px 0px 8px;
 }
 
 .suggestions {
@@ -117,7 +124,7 @@ li {
   background-color: #1e1d45;
     padding: 2%;
     border: 1px solid #00ff00;
-    box-shadow: rgba(0,255,0,0.6) 0px 0px 7px
+    box-shadow: rgba(0,255,0,0.6) 0px 0px 8px;
     margin-top: 16px;
     margin-bottom: 50px;
     min-height: 80px;
@@ -127,7 +134,7 @@ li {
 /// Code Block Styling
 [id*="in-the-dom"] + p, [id*="in-the-dom"] + div,{
   background-color: #1e1d45;
-    box-shadow: #1a00ff 0px 0px 7px;
+    box-shadow: #1a00ff 0px 0px 8px;
 }
 
 a.sidebar-link.active, a.sidebar-link.hover {
@@ -136,7 +143,7 @@ a.sidebar-link.active, a.sidebar-link.hover {
 
 [id*="input"] + div{
     background-color: #1e1d45;
-    box-shadow: #ff2a6d 0px 0px 7px;
+    box-shadow: #ff2a6d 0px 0px 8px;
     border-radius: 0.7rem;
 }
 
@@ -180,7 +187,7 @@ button:hover {
     background-color: #00ff00;
     border: 1px solid #1e1d45;
     color: #1e1d45;
-    box-shadow: rgba(0, 255, 0, 0.6) 0px 0px 7px;
+    box-shadow: rgba(0, 255, 0, 0.6) 0px 0px 8px;
 }
 
 // Input
@@ -227,7 +234,7 @@ textarea:focus, input:focus {
     border-radius: 0.7rem;
     border: 1px solid #0f0;
     outline: none;
-    box-shadow: #0f0 0px 0px 7px;
+    box-shadow: #0f0 0px 0px 8px;
     color: #0f0;
 }
 
@@ -297,7 +304,7 @@ label.toggle:after {
 input:checked + label {
     background-color: #00ff00;
     border-color: #00ff00;
-    box-shadow: rgba(0, 255, 0, 0.6) 0px 0px 7px;
+    box-shadow: rgba(0, 255, 0, 0.6) 0px 0px 8px;
 }
 input:checked + label:after {
     left: 20px;
@@ -308,7 +315,7 @@ input:checked + label:after {
 
  .child {
   border: solid 1px #05D9E8;
-  box-shadow: #d1f7ff 0px 0px 5px;
+  box-shadow: #d1f7ff 0px 0px 8px;
   padding: 5px 20px;
 }
 .child>div {
@@ -327,3 +334,4 @@ input:checked + label:after {
 .hidden {
     display: none;
 }
+

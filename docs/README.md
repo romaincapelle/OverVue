@@ -1,6 +1,9 @@
 # OverVue.dev
 
-OverVue.dev is a way to quickly grab snippets covering the core concepts of Vue.js. More info in [the about](/about-romain-capelle) section. Let's start with some common CLI commands.
+OverVue.dev is a collection of snippets covering the core concepts of Vue.js.
+Humorous examples are here to help differentiate the variables from the Vue and JavaScript syntax. I always found "foo" and "bar" placeholders hard to read.
+I tried to create snippets that you can grab as fully working components so you (and I) can start using it in Vue projects or simply for learning purposes.
+More info in the [about](/about-romain-capelle) section. Let's start with some common CLI commands.
 
 ## What is OverVue.dev ?
 

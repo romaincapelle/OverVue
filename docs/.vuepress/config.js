@@ -3,23 +3,23 @@ module.exports = {
   description:
     'OverVue.dev is a way to quickly grab snippets covering the core concepts of Vue.js',
   locales: {
-    '/': { lang: 'en-US' },
+    '/': { lang: 'en-US' }
     //'/fr/': { lang: 'Franglais' },
   },
   plugins: [
     [
       '@vuepress/google-analytics',
       {
-        ga: 'UA-166308837-1', // UA-00000000-0
-      },
-    ],
+        ga: 'UA-166308837-1' // UA-00000000-0
+      }
+    ]
   ],
   themeConfig: {
     logo: '/favicon.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about-romain-capelle' },
-      { text: 'Contact', link: '/contact-romain-capelle' },
+      { text: 'Contact', link: '/contact-romain-capelle' }
     ],
     sidebarDepth: 4,
     sidebar: [
@@ -49,10 +49,12 @@ module.exports = {
       '/vuejs-Axios',
       '/vuejs-Auth',
       '/vuejs-Firebase',
+      '/vuejs-Vuepress'
     ],
+    searchPlaceholder: 'Press "S" to focus'
   },
   markdown: {
-    lineNumbers: true,
+    lineNumbers: true
   },
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
@@ -60,9 +62,8 @@ module.exports = {
       'link',
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Inconsolata&display=swap',
-      },
-    ],
-  ],
-};
+        href: 'https://fonts.googleapis.com/css?family=Inconsolata&display=swap'
+      }
+    ]
+  ]
+}

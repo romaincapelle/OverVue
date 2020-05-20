@@ -1,8 +1,10 @@
 <template>
   <div>
-    <button @click="showing = !showing">Kill</button>
-    <transition name="fadeMe">
-      <span v-if="showing"> Hi, this is Don Lewis !</span>
+    <transition appear>
+      <button @click="showing = !showing">Kill</button>
+      <transition name="fadeMe">
+        <span v-if="showing"> Hi, this is Don Lewis !</span>
+      </transition>
     </transition>
   </div>
 </template>

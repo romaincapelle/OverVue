@@ -147,3 +147,15 @@ is the same as
 <myParentSwitch />
 
 ##### [See the official Vue.js doc](https://vuejs.org/v2/guide/forms.html)
+
+## Submit a form
+
+Use `.prevent` for the submit event to no longer reload the page. (It's an [event modifiers](/vuejs-events))
+
+#### Input
+
+<<< @/docs/.vuepress/components/Forms/Submit.vue{5,20-22}
+
+#### Output:
+
+<Forms-Submit />
