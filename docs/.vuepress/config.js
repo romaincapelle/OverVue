@@ -64,7 +64,7 @@ module.exports = {
     lineNumbers: true
   },
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', href: '/icon.png' }],
     [
       'link',
       {
@@ -103,6 +103,13 @@ module.exports = {
       { rel: 'mask-icon', color: '#f00a0', href: '/safari-pinned-tab.svg' }
     ],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    [
+      'meta',
+      {
+        property: 'twitter:image',
+        content: 'https://overvue.dev/overvue-card.jpg'
+      }
+    ],
     [
       'meta',
       {
