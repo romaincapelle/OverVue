@@ -1,7 +1,7 @@
 module.exports = {
   title: 'OverVue.dev',
   description:
-    'OverVue.dev is a way to quickly grab snippets covering the core concepts of Vue.js',
+    'OverVue.dev is a collection of snippets covering the core concepts of Vue.js',
   locales: {
     '/': { lang: 'en-US' }
     //'/fr/': { lang: 'Franglais' },
@@ -45,13 +45,12 @@ module.exports = {
       '/vuejs-filters',
       '/vuejs-mixins',
       '/vuejs-directives',
-      '/vuejs-vue-resource',
       '/vuejs-Axios',
       '/vuejs-Auth',
       '/vuejs-Firebase',
       '/vuejs-Vuepress'
     ],
-    searchPlaceholder: 'Press "S" to focus'
+    searchPlaceholder: 'Press "S" to focus on Search bar'
   },
   markdown: {
     lineNumbers: true
@@ -63,6 +62,44 @@ module.exports = {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Inconsolata&display=swap'
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png'
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png'
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png'
+      }
+    ],
+    [
+      'link',
+      { rel: 'mask-icon', color: '#f00a0', href: '/safari-pinned-tab.svg' }
+    ],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    [
+      'meta',
+      {
+        property: 'og:image',
+        content: 'https://overvue.dev/overvue-card.jpg'
       }
     ]
   ]
