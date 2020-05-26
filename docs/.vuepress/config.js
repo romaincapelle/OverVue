@@ -105,6 +105,34 @@ module.exports = {
     [
       'meta',
       {
+        property: 'og:image:type',
+        content: 'image/jpg'
+      }
+    ],
+    [
+      'meta',
+      {
+        property: 'og:image:width',
+        content: '2667'
+      }
+    ],
+    [
+      'meta',
+      {
+        property: 'og:image:alt',
+        content: 'OverVue.dev / Vue.JS snippets site'
+      }
+    ],
+    [
+      'meta',
+      {
+        property: 'og:image:height',
+        content: '1333'
+      }
+    ],
+    [
+      'meta',
+      {
         name: 'twitter:card',
         content: 'https://overvue.dev/overvue-card.jpg'
       }
