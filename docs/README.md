@@ -1,3 +1,9 @@
+---
+description: OverVue.dev is a collection of snippets covering the core concepts of Vue.js.
+image: '/overvue-card.jpg'
+twitter_creator: romaincapelle
+---
+
 # OverVue.dev
 
 ## What is OverVue.dev ?
