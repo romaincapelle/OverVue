@@ -99,14 +99,14 @@ module.exports = {
       'meta',
       {
         property: 'og:image',
-        content: '/overvue-card.jpg'
+        content: 'https://overvue.dev/overvue-card.jpg'
       }
     ],
     [
       'meta',
       {
         name: 'twitter:card',
-        content: '/overvue-card.jpg'
+        content: 'https://overvue.dev/overvue-card.jpg'
       }
     ]
   ]
