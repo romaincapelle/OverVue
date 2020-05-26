@@ -1,3 +1,3 @@
-# Aut (soon)
+# Auth (soon)
 
 Coming Soon
