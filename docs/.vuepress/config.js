@@ -105,6 +105,20 @@ module.exports = {
     [
       'meta',
       {
+        property: 'og:url',
+        content: 'https://overvue.dev/'
+      }
+    ],
+    [
+      'meta',
+      {
+        property: 'og:type',
+        content: 'website'
+      }
+    ],
+    [
+      'meta',
+      {
         property: 'og:image:type',
         content: 'image/jpg'
       }
