@@ -25,7 +25,6 @@ module.exports = {
     sidebar: [
       '/',
       '/vuejs-cli',
-      '/vuejs-vscode',
       '/vuejs-interpolations',
       '/vuejs-computed',
       '/vuejs-watch',
@@ -48,7 +47,8 @@ module.exports = {
       '/vuejs-Axios',
       '/vuejs-Auth',
       '/vuejs-Firebase',
-      '/vuejs-Vuepress'
+      '/vuejs-Vuepress',
+      '/vuejs-vscode'
     ],
     searchPlaceholder: 'Press "S" to focus on Search bar'
   },
@@ -99,7 +99,14 @@ module.exports = {
       'meta',
       {
         property: 'og:image',
-        content: 'https://overvue.dev/overvue-card.jpg'
+        content: '/overvue-card.jpg'
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:card',
+        content: '/overvue-card.jpg'
       }
     ]
   ]
