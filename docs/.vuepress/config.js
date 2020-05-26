@@ -135,7 +135,14 @@ module.exports = {
       'meta',
       {
         property: 'og:image:width',
-        content: '2667'
+        content: '1600'
+      }
+    ],
+    [
+      'meta',
+      {
+        property: 'og:image:height',
+        content: '630'
       }
     ],
     [
@@ -143,13 +150,6 @@ module.exports = {
       {
         property: 'og:image:alt',
         content: 'OverVue.dev / Vue.JS snippets site'
-      }
-    ],
-    [
-      'meta',
-      {
-        property: 'og:image:height',
-        content: '1333'
       }
     ],
     [
