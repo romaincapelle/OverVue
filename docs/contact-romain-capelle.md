@@ -2,7 +2,10 @@
 
 I welcome and encourage any feedback.
 
-<form name="contact" method="POST" data-netlify="true" action="/contact-success">
+<form name="contact" method="POST" data-netlify="true" action="/contact-success" netlify-honeypot="bot-field">
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
   <p>
     <label>Your Name:</br> <input type="text" name="name" /></label>   
   </p>
@@ -16,3 +19,5 @@ I welcome and encourage any feedback.
     <button class="large" type="submit">Send</button>
   </p>
 </form>
+
+Or `romain@romaincapelle.com`
