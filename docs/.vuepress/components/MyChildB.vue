@@ -4,7 +4,7 @@
     <input
       type="text"
       v-bind:value="value"
-      v-on:input="updateValue($event.target.value)"
+      @input="updateValue($event.target.value)"
       placeholder="Type name"
     />
   </div>

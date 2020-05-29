@@ -5,7 +5,7 @@
 export default {
   data() {
     return {
-      firstName: 'Joe'
+      firstName: 'The Tiger King'
     }
   }
 }

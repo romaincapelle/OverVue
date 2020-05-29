@@ -8,7 +8,7 @@
       name="some-switch"
     />
     <label class="toggle" for="switch"></label>
-    <!-- The other value are NOT in the DOM -->
+    <!-- The "false" values are NOT rendered in the DOM -->
     <p v-if="showing">"First Option"<span> /and its childs</span></p>
     <p v-else-if="!showing">"Second option"</p>
     <p v-else>Can't see me</p>

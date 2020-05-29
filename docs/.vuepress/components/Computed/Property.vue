@@ -6,8 +6,8 @@
 export default {
   data() {
     return {
-      firstName: 'Romain',
-      lastName: 'Capelle'
+      firstName: 'Joe',
+      lastName: 'Exotic'
     }
   },
   computed: {

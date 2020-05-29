@@ -1,7 +1,7 @@
 <template>
   <div>
-    <li v-for="ingredient in ingredients" :key="ingredient">
-      {{ ingredient }}
+    <li v-for="bigCat in bigCats" :key="bigCat">
+      {{ bigCat }}
     </li>
   </div>
 </template>
@@ -9,7 +9,7 @@
 export default {
   data: function() {
     return {
-      ingredients: ['Coffee', 'Cheese', 'Water']
+      bigCats: ['Mountain Lion', '	Clouded leopard', 'Eurasian lynx']
     }
   }
 }

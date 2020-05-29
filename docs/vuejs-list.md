@@ -14,7 +14,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Lists/Withindex.vue{3-5,12}
+<<< @/docs/.vuepress/components/Lists/Withindex.vue{4-6,14}
 
 #### Output:
 
@@ -24,7 +24,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Lists/Onobjects.vue{3-5,12-15}
+<<< @/docs/.vuepress/components/Lists/Onobjects.vue{3-5,12-16}
 
 #### Output:
 

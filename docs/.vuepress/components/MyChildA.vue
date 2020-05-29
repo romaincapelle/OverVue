@@ -1,11 +1,11 @@
 <template>
   <div class="child">
-    <p>Child component - As prop from parent: {{ name }}</p>
+    <p>Child component - As prop from parent: {{ someText }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['name']
+  props: ['someText']
 }
 </script>

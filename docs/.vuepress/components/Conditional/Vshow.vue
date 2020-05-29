@@ -8,7 +8,7 @@
       name="some-switchShow"
     />
     <label class="toggle" for="switchShow"></label>
-    <!-- Use V-Show to keep data hidden in the DOM -->
+    <!-- The "false" values are rendered and display:none in the DOM-->
     <p v-show="showing">"See you in the DOM!</span></p>
   </div>
 </template>

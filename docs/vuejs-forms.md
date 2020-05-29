@@ -2,9 +2,17 @@
 
 ## Basic input
 
+Use v-model for two-way binding in forms.
+
+`v-model="something"`
+
+is like using the combination of:
+
+`v-bind:value="something" v-on:input="something = $event.target.value"`
+
 #### Input:
 
-<<< @/docs/.vuepress/components/Forms/Basic.vue{4-6,16}
+<<< @/docs/.vuepress/components/Forms/Basic.vue{5,16}
 
 #### Output:
 
@@ -14,7 +22,7 @@
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Forms/DataAsObject.vue{4-6,16}
+<<< @/docs/.vuepress/components/Forms/DataAsObject.vue{4,6,15-18}
 
 #### Output:
 
@@ -40,7 +48,7 @@ The Key to save data from a checkboxes into one array, is to use the same v-mode
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Forms/Checkboxes.vue{5,7,9,22}
+<<< @/docs/.vuepress/components/Forms/Checkboxes.vue{5,7,9,13,22}
 
 #### Output:
 
@@ -62,7 +70,7 @@ To save data from radio buttons, use the same v-model on the input.
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Forms/SelectDropdown.vue{5,7-9,22}
+<<< @/docs/.vuepress/components/Forms/SelectDropdown.vue{5-9,18-23}
 
 #### Output:
 
@@ -107,30 +115,6 @@ Use .trim to preven user to input double or triple white space.
 #### Output:
 
 <Forms-TrimModifier />
-
-## How v-model works
-
-```vue {3}
-<template>
-  <div>
-    <input type="text" v-model="userData.email" />
-  </div>
-</template>
-```
-
-is the same as
-
-```vue {5-6}
-<template>
-  <div>
-    <input
-      type="text"
-      :value="userData.email"
-      @click="userData.email = $event.target.value"
-    />
-  </div>
-</template>
-```
 
 ## Custom input in forms
 

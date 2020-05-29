@@ -3,7 +3,7 @@
     <p>Parent component - Name: {{ name }}</p>
     <button @click="name = 'Howard'">Change name</button>
     <button @click="name = 'Carole'">Reset</button>
-    <MyChildA :name="name"></MyChildA>
+    <MyChildA :someText="name"></MyChildA>
   </div>
 </template>
 

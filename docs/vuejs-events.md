@@ -1,11 +1,23 @@
 # Events / v-on
 
-Use the v-on directive to listen to DOM events.
+Use the `v-on:` directive to listen to DOM events (or the shortcut `@`).
 You can chain a key modifier like .enter
+
+## Click event
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Events/Events.vue{3,6,17-19}
+<<< @/docs/.vuepress/components/Events/EventsClick.vue{2,7-11}
+
+#### Output:
+
+<Events-EventsClick />
+
+## KeyUp event
+
+#### Input:
+
+<<< @/docs/.vuepress/components/Events/Events.vue{5,7,18,21-25}
 
 #### Output:
 

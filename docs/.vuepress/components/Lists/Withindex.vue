@@ -1,15 +1,17 @@
 <template>
   <div>
-    <li v-for="(ingredient, i) in ingredients" :key="ingredient">
-      {{ i + 1 }}: {{ ingredient }}
+    <p>List of Joe Exotic's Five Husbands</p>
+    <li v-for="(husband, i) in husbands" :key="husband">
+      {{ i + 1 }}: {{ husband }}
     </li>
+    </p>
   </div>
 </template>
 <script>
 export default {
   data: function() {
     return {
-      ingredients: ['Coffee', 'Water', 'Cheese']
+      husbands: ['Brian', 'J.C.', 'John', 'Travis', 'Dillon']
     }
   }
 }

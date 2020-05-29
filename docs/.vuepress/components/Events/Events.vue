@@ -1,11 +1,11 @@
 <template>
   <div>
-    <button @click="AlertHello">Hello</button><br />
     <p>
       <input
-        v-on:keyup.enter="AlertHello"
+        @keyup.enter="alertTheMessage"
         type="text"
-        placeholder="Type and Enter"
+        v-model="myMessage"
+        placeholder="Type something and press Enter"
       />
     </p>
   </div>
@@ -13,9 +13,14 @@
 
 <script>
 export default {
+  data() {
+    return {
+      myMessage: ''
+    }
+  },
   methods: {
-    AlertHello: function() {
-      alert('Hello')
+    alertTheMessage: function() {
+      alert(this.myMessage)
     }
   }
 }

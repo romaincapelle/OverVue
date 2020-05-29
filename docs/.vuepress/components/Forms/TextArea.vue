@@ -1,11 +1,13 @@
 <template>
   <div>
     <form>
-    <p>Type your message :</p>
-      <textarea v-model="msg" type="msg" placeholder="Type your message here..."></textarea><br/>
+      <label>Type your message :</label>
+      <textarea v-model="msg" type="msg"></textarea>
     </form>
-    <p style="white-space:pre">{{msg}}</p>
-    </div>
+    <h5>Message with css white space "pre":</h5>
+    <p style="white-space:pre">{{ msg }}</p>
+    <h5>Message without extra css:</h5>
+    <p>{{ msg }}</p>
   </div>
 </template>
 
@@ -13,10 +15,10 @@
 export default {
   data() {
     return {
-      msg :`Watch the
+      msg: `Watch the
 line
 break`
-    };
-  },
-};
+    }
+  }
+}
 </script>

@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      name :'Allen Glover'
+      name : 'Joe Exotic'
     };
   },
 };

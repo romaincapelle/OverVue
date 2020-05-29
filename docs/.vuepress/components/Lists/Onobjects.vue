@@ -1,7 +1,7 @@
 <template>
   <div>
-    <li v-for="person in persons" :key="person.id">
-      {{ person.name }} is {{ person.age }}
+    <li v-for="zoo in zoos" :key="zoo.id">
+      A ticket to the {{ zoo.name }} cost ${{ zoo.price }}
     </li>
   </div>
 </template>
@@ -9,9 +9,10 @@
 export default {
   data: function() {
     return {
-      persons: [
-        { id: '001', name: 'Joe Exotic', age: 57 },
-        { id: '002', name: 'Carole Baskin', age: 58 }
+      zoos: [
+        { id: '001', name: 'San Diego Zoo', price: 58 },
+        { id: '002', name: 'G.W. Zoo', price: 15 },
+        { id: '002', name: 'Big Cat Rescue', price: 29 }
       ]
     }
   }

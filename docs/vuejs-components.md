@@ -1,38 +1,67 @@
 # Passing data though components
 
-First let see how to import a component and pass a string
-
 ## Import a component
+
+This is how to register and import a component. Notice that we are passing data, that is not binded.
+
+##### Input
 
 ```Vue {3,8,11-13}
 <template>
   <div>
-    <HelloWorld msg="I like Aussies"/>
+    <MyFirstComponent msg="I like Aussies"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyFirstComponent from './components/MyFirstComponent.vue'
 
 export default {
   components: {
-    HelloWorld
+    MyFirstComponent
   }
 }
 </script>
 ```
 
+##### Output
+
+<p>I like Aussies</p>
+
 ## Passing data to Child
 
-Now let's see how to pass data from parent to child component.
+Now let's see how to pass binded data from parent to child component.
 
 #### Input Parent:
 
-<<< @/docs/.vuepress/components/MyParentA.vue{3,14}
+```vue{6,14}
+<template>
+  <div>
+    <p>Parent component - Name: {{ name }}</p>
+    <button @click="name = 'Howard'">Change name</button>
+    <button @click="name = 'Carole'">Reset</button>
+    <MyChildA :someText="name"></MyChildA>
+  </div>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      name: 'Carole'
+    }
+  }
+}
+</script>
+```
 
 #### Input Child:
 
 <<< @/docs/.vuepress/components/MyChildA.vue{3,9}
+
+:::tip
+Props can be an array or an object ( in order to add some validation ) - See below
+:::
 
 #### Output:
 
@@ -44,11 +73,11 @@ Now let's see how to pass data from Child to Parent component.
 
 #### Input Parent:
 
-<<< @/docs/.vuepress/components/MyParentB.vue{6,14}
+<<< @/docs/.vuepress/components/MyParentB.vue{4,12}
 
 #### Input Child:
 
-<<< @/docs/.vuepress/components/MyChildB.vue{3,9}
+<<< @/docs/.vuepress/components/MyChildB.vue{6-7,15-19}
 
 #### Output:
 

@@ -30,7 +30,7 @@ Use V-Show to keep data in the DOM with a "display:none"
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Conditional/Vshow.vue{12,20}
+<<< @/docs/.vuepress/components/Conditional/Vshow.vue{11-12,20}
 
 ::: tip
 Generally speaking, v-if has higher toggle costs while v-show has higher initial render costs. So prefer v-show if you need to toggle something very often, and prefer v-if if the condition is unlikely to change at runtime.

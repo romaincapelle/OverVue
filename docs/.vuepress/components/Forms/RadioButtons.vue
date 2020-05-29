@@ -1,16 +1,16 @@
 <template>
   <div>
     <form>
-        <legend>What happen to Don Lewis ?</legend>
-        <p><input v-model="answer" type="radio" value="no">
-        <label for="no">She didn't killed him</label></p>
-        <p><input v-model="answer" type="radio" value="yes">
-        <label for="yes">She definitely killed him</label></p>
-        <p><input v-model="answer" type="radio" value="notsure">
-        <label for="notsure">I don't know</label></p>
+        <legend>What happen to Don Lewis ?</legend><br/>
+        <input v-model="answer" type="radio" value="no">
+        <label for="no">She didn't killed him</label><br/>
+        <input v-model="answer" type="radio" value="notsure">
+        <label for="notsure">I don't know</label><br/>
+        <input v-model="answer" type="radio" value="yes">
+        <label for="yes">She definitely killed him</label>
     </form>
-    <p v-if="answer"></p>
-    <p v-else>{{answer}}</li></p>
+    <p v-if="this.answer === 'no'">Are you sure ?</p>
+    <p v-else-if="this.answer === 'notsure'">I mean...</p>
     </div>
   </div>
 </template>
