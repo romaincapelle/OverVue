@@ -12,7 +12,7 @@
 export default {
   data: function() {
     return {
-      loading: 69
+      loading: 67
     }
   }
 }

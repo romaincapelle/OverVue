@@ -1,15 +1,83 @@
-# Passing data though components
+# Components
 
 ## Import a component
 
-This is how to register and import a component. Notice that we are passing data, that is not binded.
+This is how to register and import a component.
+
+##### Input Parent
+
+```Vue {3,8,11-13}
+<template>
+  <div>
+    <MyFirstComponent/>
+  </div>
+</template>
+
+<script>
+import MyFirstComponent from './components/MyFirstComponent.vue'
+
+export default {
+  components: {
+    MyFirstComponent
+  }
+}
+</script>
+```
+
+##### Input Child (MyFirstComponent.vue)
+
+```Vue
+<template>
+  <p>I like tigers.</p>
+</template>
+
+<script>
+import MyFirstComponent from './components/MyFirstComponent.vue'
+
+export default {
+  components: {
+    MyFirstComponent
+  }
+}
+</script>
+```
+
+##### Output
+
+I like tigers
+
+## Dynamically import components
+
+Using `:is="componentName"` you can switch between components
+
+##### Input
+
+<<< @/docs/.vuepress/components/dynamicComponent.vue{5,10-11,20}
+
+#### Output
+
+<dynamicComponentRender />
+
+### And keep the data alive
+
+Using `<keep-alive>`, inactive components will be cached.
+
+``` js {1,3}
+<keep-alive>
+  <component :is="currentTabComponent"></component>
+</keep-alive>
+````
+
+## Passing data to Child
+
+We are passing data, that is not binded.
 
 ##### Input
 
 ```Vue {3,8,11-13}
 <template>
   <div>
-    <MyFirstComponent msg="I like Aussies"/>
+    <MyFirstComponent msg="I like tiger print"/>
   </div>
 </template>
 
@@ -26,9 +94,10 @@ export default {
 
 ##### Output
 
-<p>I like Aussies</p>
+<p>I like tiger prints</p>
 
-## Passing data to Child
+
+## Passing binded data to Child
 
 Now let's see how to pass binded data from parent to child component.
 

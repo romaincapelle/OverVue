@@ -13,7 +13,7 @@ npm install tailwindcss
 Create the file
 
 ```shell
-touch src/assets/tailwind02.css
+touch src/assets/tailwind.css
 ```
 
 ##### Input - Add this content to the file :

@@ -215,10 +215,49 @@ const router = new VueRouter({
 
 export default router
 ```
+## Nested route
 
-## Lazy Loading Syntax
-
+```js {4-17}
+const router = new VueRouter({
+  routes: [
+    { path: '/user/:id', component: User,
+      children: [
+        {
+          // UserProfile will be rendered inside User's <router-view>
+          // when /user/:id/profile is matched
+          path: 'profile',
+          component: UserProfile
+        },
+        {
+          // UserPosts will be rendered inside User's <router-view>
+          // when /user/:id/posts is matched
+          path: 'posts',
+          component: UserPosts
+        }
+      ]
+    }
+  ]
+})
 ```
+
+## 404 route
+
+Create a component named for instance `NotFoundComponent`
+
+``` js {4}
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+    { path: '*', component: NotFoundComponent }
+  ]
+})
+```
+
+## Lazy Load Syntax (Code Splitting)
+
+To make sure that not all routes are loaded right when opening the app. Using Vue's Async Components and webpack's code splitting feature
+
+```js
 const User = () => import('./components/user/User.vue');
 ...
 export const routes = [
@@ -231,3 +270,6 @@ export const routes = [
     }
 ];
 ```
+
+
+[See the Official Vue Router doc ](https://router.vuejs.org/)
