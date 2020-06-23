@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{376:function(t,e,n){"use strict";n.r(e);var i={data:function(){return{firstName:"The Tiger King"}}},s=n(33),r=Object(s.a)(i,(function(){var t=this.$createElement;return(this._self._c||t)("p",[this._v(this._s(this.firstName))])}),[],!1,null,null,null);e.default=r.exports}}]);
