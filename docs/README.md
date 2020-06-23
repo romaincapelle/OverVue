@@ -26,3 +26,5 @@ The Official [Vue Documentation](https://vuejs.org/v2/guide/) is awesome, arguab
 Overvue.dev is just meant to cover quickly the core concept of Vue. It's an easy way for me to grab some snippets, so I figured I would share it with you. I linked the official doc on each page. I also organized it the way made sense to me.
 
 [I welcome and encourage any feedback.](/contact-romain-capelle)
+
+[Contribute on github](https://github.com/romaincapelle/Overvue)
