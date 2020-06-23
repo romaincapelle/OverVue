@@ -27,4 +27,4 @@ Overvue.dev is just meant to cover quickly the core concept of Vue. It's an easy
 
 [I welcome and encourage any feedback.](/contact-romain-capelle)
 
-[Contribute on github](https://github.com/romaincapelle/Overvue)
+[Contribute on GitHub](https://github.com/romaincapelle/Overvue)
