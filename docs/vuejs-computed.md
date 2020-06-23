@@ -7,10 +7,6 @@ Computed properties, convenient for simple operations, allow us to define a prop
 - Form validation
 - Data visualizations that change depending on what the user needs to see
 
-:::tip
-You should never use assignment operator in computed Property.
-:::
-
 #### Input:
 
 <<< @/docs/.vuepress/components/Computed/Property.vue{2,13-17}
