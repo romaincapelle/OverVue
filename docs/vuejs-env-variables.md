@@ -74,7 +74,7 @@ Staging is NOT one of the three build-in mode that offer the vue-cli-service.
   "serve": "vue-cli-service serve",
   "build": "vue-cli-service build",
   "lint": "vue-cli-service lint",
-  "build:development": "vue-cli-service build --mode staging"
+  "build:staging": "vue-cli-service build --mode staging"
 },
 ```
 
