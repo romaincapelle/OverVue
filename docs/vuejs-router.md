@@ -85,7 +85,7 @@ Use the router-link for the Navigation Bar
 
 ### Active router-link
 
-The active link will automatically be binded to two css `class="router-link-active"`.
+The active link will automatically be bound to two css `class="router-link-active"`.
 
 ##### Input
 

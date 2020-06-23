@@ -1,0 +1,12 @@
+<template>
+  <div>
+    <slot>Title</slotyarn docs:dev>
+  </div>
+</template>
+
+<style scoped>
+h3 {
+  /*the css styling is of the slot should be in the child */
+  color: #f09;
+}
+</style>

@@ -62,15 +62,15 @@ Using `:is="componentName"` you can switch between components
 
 Using `<keep-alive>`, inactive components will be cached.
 
-``` js {1,3}
+```js {1,3}
 <keep-alive>
   <component :is="currentTabComponent"></component>
 </keep-alive>
-````
+```
 
 ## Passing data to Child
 
-We are passing data, that is not binded.
+We are passing data, that is not bound.
 
 ##### Input
 
@@ -96,10 +96,9 @@ export default {
 
 <p>I like tiger prints</p>
 
+## Passing bound data to Child
 
-## Passing binded data to Child
-
-Now let's see how to pass binded data from parent to child component.
+Now let's see how to pass bound data from parent to child component.
 
 #### Input Parent:
 
