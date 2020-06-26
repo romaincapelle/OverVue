@@ -106,7 +106,7 @@ Use .number on v-model to "make sure" the input is of type "number"
 
 ### Trim the input
 
-Use .trim to preven user to input double or triple white space.
+Use .trim to prevent user to input double or triple white space.
 
 #### Input:
 
