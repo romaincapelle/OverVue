@@ -2,7 +2,7 @@
   <div>
     <form>
       <label>Type your message :</label>
-      <textarea v-model="msg" type="msg"></textarea>
+      <textarea v-model="msg" name="msg"></textarea>
     </form>
     <h5>Message with css white space "pre":</h5>
     <p style="white-space:pre">{{ msg }}</p>
