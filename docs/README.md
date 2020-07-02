@@ -21,10 +21,15 @@ More info about me in the [About me](/about-romain-capelle).
 
 ## About the official Vue Docs
 
-The Official [Vue Documentation](https://vuejs.org/v2/guide/) is awesome, arguably the best JS framework doc out there.
+La doc [Vue](https://fr.vuejs.org/v2/guide/) est excellente.
 
 Overvue.dev is just meant to cover quickly the core concept of Vue. It's an easy way for me to grab some snippets, so I figured I would share it with you. I linked the official doc on each page. I also organized it the way made sense to me.
 
 [I welcome and encourage any feedback.](/contact-romain-capelle)
 
 [Contribute on GitHub](https://github.com/romaincapelle/OverVue.dev)
+
+Site par [Romain Capelle](/contact-romain-capelle)
+
+Contribution:
+Traduction FR par ....
