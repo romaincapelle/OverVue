@@ -3,8 +3,18 @@ module.exports = {
   description:
     'OverVue.dev is a collection of snippets covering the core concepts of Vue.js',
   locales: {
-    '/': { lang: 'en-US' }
-    //'/fr/': { lang: 'Franglais' },
+    '/': {
+      lang: 'en-US', // this will be set as the lang attribute on <html>
+      title: 'VuePress',
+      description:
+        'OverVue.dev is a collection of snippets covering the core concepts of Vue.js'
+    },
+    '/fr/': {
+      lang: 'fr-fr',
+      title: 'VuePress',
+      description:
+        'OverVue.dev est une collection de snippets couvrant les concepts fondamentaux de Vue.js'
+    }
   },
   plugins: [
     [
