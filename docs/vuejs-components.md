@@ -30,16 +30,6 @@ export default {
 <template>
   <p>I like tigers.</p>
 </template>
-
-<script>
-import MyFirstComponent from './components/MyFirstComponent.vue'
-
-export default {
-  components: {
-    MyFirstComponent
-  }
-}
-</script>
 ```
 
 ##### Output
