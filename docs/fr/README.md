@@ -1,30 +1,30 @@
 ---
-description: OverVue.dev is a collection of snippets covering the core concepts of Vue.js.
+description: OverVue.dev est une collection de snippets qui traitent des concepts principaux de Vue.js.
 image: '/overvue-card.jpg'
 twitter_creator: romaincapelle
 ---
 
 # OverVue.dev
 
-## What is OverVue.dev ?
+## OverVue.dev c'est quoi ?
 
-OverVue.dev is a collection of snippets covering the core concepts of Vue.js.
-Humorous examples are here to help differentiate the variables from the Vue and JavaScript syntax. I always found "foo" and "bar" placeholders hard to read.
-I tried to create snippets that you can grab as fully working components so you (and I) can start using it in Vue projects or simply for learning purposes.
+OverVue.dev est une collection de snippets qui traitent des concepts principaux de Vue.js.
+Quelques exemples humoristiques sont présents pour aider à différencier les variables provenant des syntaxes Vue et JavaScript. Je trouve que les placeholders "foo" et "bar" sont difficile à comprendre.
+J'ai essayé de créer des snippets utilisables tel quel comme composants afin que vous (et moi) puissions les utiliser dans des projets Vue ou simplement à des fins d'apprentissage.
 
-I built this website (using [VuePress](https://vuepress.vuejs.org/)) as I was starting my journey with [Vue.js](https://vuejs.org/) for two reasons:
+J'ai codé ce site (en utilisant [VuePress](https://vuepress.vuejs.org/)) au moment où je commençais l'aventure [Vue.js](https://vuejs.org/) pour deux raisons:
 
-- Learning the different parts of Vue.js
-- Quickly find snippets covering basic concepts of Vue.js.
+- Apprendre les différentes parties de Vue.js.
+- Trouver rapidement des snippets traitant des concepts de base de Vue.js.
 
-More info about me in the [About me](/about-romain-capelle).
+Plus d'infos à mon sujet dans la section [A propos](/about-romain-capelle).
 
-## About the official Vue Docs
+## A propos de la documentation officielle du framework
 
-The Official [Vue Documentation](https://vuejs.org/v2/guide/) is awesome, arguably the best JS framework doc out there.
+La [Documentation Officielle](https://fr.vuejs.org/v2/guide/) est géniale, sans aucun doute la meilleure documentation pour un framework JavaScript.
 
-Overvue.dev is just meant to cover quickly the core concept of Vue. It's an easy way for me to grab some snippets, so I figured I would share it with you. I linked the official doc on each page. I also organized it the way made sense to me.
+Overvue.dev est destiné à survoler les concepts principaux de Vue. C'est un moyen d'avoir des snippets à portée de main, donc j'ai pensé que cela serait sympa de vous les partager. Il y a des liens vers la documentation sur chaque page. Je l'ai également organisé d'une manière qui fait sens pour moi.
 
-[I welcome and encourage any feedback.](/contact-romain-capelle)
+[Tout retour est apprécié et vivement encouragé](/contact-romain-capelle)
 
-[Contribute on GitHub](https://github.com/romaincapelle/OverVue.dev)
+[Contribuer sur GitHub](https://github.com/romaincapelle/OverVue.dev)
