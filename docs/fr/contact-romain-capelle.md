@@ -1,5 +1,7 @@
-# Contact Romain Capelle
+# Contacter Romain Capelle
 
-I welcome and encourage any feedback.
+Tout retour est apprécié et vivement encouragé
+
+<!--I welcome and encourage any feedback.-->
 
 `romain@romaincapelle.com`

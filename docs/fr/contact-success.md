@@ -1,17 +1,17 @@
-# Message sent, thank you !
+# Le message a été envoyé, merci !
 
-I will get back to you ASAP. Now here are some options:
+Je reviens vers vous dès que possible. Voici d'autres options:
 
-[Add me on linledIn](https://linkedin.com/in/romaincapelle)
+[Ajoutez moi sur LinkedIn](https://linkedin.com/in/romaincapelle)
 
-or
+ou
 
-[Find me on Twitter](https://twitter.com/romaincapelle)
+[Trouvez moi sur Twitter](https://twitter.com/romaincapelle)
 
-or
+ou
 
-[My personal website](https://romaincapelle.com)
+[Mon portfolio](https://romaincapelle.com)
 
-or
+ou
 
-[Stay on OverVue.dev](/)
+[Rester sur OverVue.dev](/)
