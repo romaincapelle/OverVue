@@ -8,7 +8,7 @@ Create a project
 vue create hello-world
 ```
 
-or if you prefet a GUI:
+or if you prefer a GUI:
 
 ```shell
 vue ui
@@ -50,7 +50,7 @@ npm run lint
 
 ## Instant Prototyping
 
-Or how to "How to inspect a single component". You can rapidly prototype with just a single Vue file with the vue serve.
+Or "How to inspect a single component". You can rapidly prototype with just a single Vue file with the vue serve.
 To install globally a vue-cli-service, run `npm install -g @vue/cli-service-global`
 
 To serve a single file run the command:
