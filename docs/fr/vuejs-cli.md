@@ -1,14 +1,14 @@
 # CLI
 
-## Vue CLI Common Commands
+## Commandes de base de Vue CLI
 
-Create a project
+Créer un projet
 
 ```shell
 vue create hello-world
 ```
 
-or if you prefet a GUI:
+Si vous préférez une interface graphique:
 
 ```shell
 vue ui
@@ -16,7 +16,7 @@ vue ui
 
 ---
 
-Install dependencies
+Installer des dépendances
 
 ```shell
 npm install
@@ -24,7 +24,7 @@ npm install
 
 ---
 
-Compiles and hot-reloads for development
+Compiler + hot-reload pour les développements
 
 ```shell
 npm run serve
@@ -32,28 +32,28 @@ npm run serve
 
 ---
 
-Compiles and minifies for production
+Compiler et minifier pour la production
 
 ```shell
 npm run build
 ```
 
-Lints and fixes files
+"Linter" et corriger les fichiers
 
 ```shell
 npm run lint
 ```
 
-[Customize configuration](https://cli.vuejs.org/config/).
+[Configuration personnalisée](https://cli.vuejs.org/config/).
 
 
 
-## Instant Prototyping
+## Prototypage "instantané"
 
-Or how to "How to inspect a single component". You can rapidly prototype with just a single Vue file with the vue serve.
-To install globally a vue-cli-service, run `npm install -g @vue/cli-service-global`
+Où comment "Inspecter un composant". Il est facile de générer l'aperçu d'un composant en utilisant vue serve.
+Pour installer de manière globale vue-cli-service, tapez la commande `npm install -g @vue/cli-service-global`
 
-To serve a single file run the command:
+Puis pour générer un seul fichier tapez la commande:
 
 ```Shell
 vue serve MyComponent.vue

@@ -1,6 +1,6 @@
 # Axios ( Work in Progress)
 
-This section is based on the [Axios package](https://github.com/axios/axios).
+Cette section est basée sur le package [Axios](https://github.com/axios/axios).
 
 ## Installation via NPM
 
