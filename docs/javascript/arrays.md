@@ -9,13 +9,13 @@ pageClass: js
 ### The "normal way"
 
 ```javascript
-const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
+const dreamTeam = ['Michael', "Shaquille", 'Kobe']
 ```
 
 ### Using the "new" constructor
 
 ```js
-const dreamTeam = new Array('Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant')
+const dreamTeam = new Array('Michael', 'Shaquille', 'Kobe')
 ```
 
 Be carefull
