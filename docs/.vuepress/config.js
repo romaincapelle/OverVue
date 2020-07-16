@@ -25,41 +25,58 @@ module.exports = {
   themeConfig: {
     logo: '/favicon.svg',
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Javascript', link: '/javascript/' },
+      { text: 'VueJs', link: '/' },
       { text: 'About', link: '/about-romain-capelle' },
       { text: 'Contact', link: '/contact-romain-capelle' }
     ],
-    sidebarDepth: 4,
-    sidebar: [
-      '/',
-      '/vuejs-cli',
-      '/vuejs-interpolations',
-      '/vuejs-computed',
-      '/vuejs-watch',
-      '/vuejs-v-bind',
-      '/vuejs-class',
-      '/vuejs-events',
-      '/vuejs-conditional',
-      '/vuejs-list',
-      '/vuejs-forms',
-      //'/vuejs-forminputvalidation',
-      '/vuejs-components',
-      '/vuejs-slots',
-      '/vuejs-vuex',
-      '/vuejs-router',
-      '/vuejs-transitions',
-      //'/vuejs-animations',
-      //'/vuejs-filters',
-      //'/vuejs-mixins',
-      //'/vuejs-directives',
-      '/vuejs-Axios',
-      //'/vuejs-Auth',
-      '/vuejs-env-variables',
-      //'/vuejs-Firebase',
-      '/vuejs-Vuepress',
-      '/vuejs-tailwindcss.md',
-      '/vuejs-vscode'
-    ],
+    sidebarDepth: 1,
+    sidebar: {
+      '/javascript/': [
+        {
+          title: 'Javascript', // required
+          path: '/javascript/', // optional, link of the title, which should be an absolute path and must exist
+          collapsable: false,
+          sidebarDepth: 1, // optional, defaults to 1
+          children: [
+            '' /* /foo/ */,
+            'arrays.md',
+            'objects.md' /* /foo/two.html */
+          ]
+        }
+      ],
+      // fallback
+      '/': [
+        '/',
+        '/vuejs-cli',
+        '/vuejs-interpolations',
+        '/vuejs-computed',
+        '/vuejs-watch',
+        '/vuejs-v-bind',
+        '/vuejs-class',
+        '/vuejs-events',
+        '/vuejs-conditional',
+        '/vuejs-list',
+        '/vuejs-forms',
+        //'/vuejs-forminputvalidation',
+        '/vuejs-components',
+        '/vuejs-slots',
+        '/vuejs-vuex',
+        '/vuejs-router',
+        '/vuejs-transitions',
+        //'/vuejs-animations',
+        //'/vuejs-filters',
+        //'/vuejs-mixins',
+        //'/vuejs-directives',
+        '/vuejs-Axios',
+        //'/vuejs-Auth',
+        '/vuejs-env-variables',
+        //'/vuejs-Firebase',
+        '/vuejs-Vuepress',
+        '/vuejs-tailwindcss.md',
+        '/vuejs-vscode'
+      ]
+    },
     searchPlaceholder: 'Press "S" to focus on Search bar'
   },
   markdown: {
@@ -72,6 +89,13 @@ module.exports = {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Inconsolata&display=swap'
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Caveat&display=swap'
       }
     ],
     [
