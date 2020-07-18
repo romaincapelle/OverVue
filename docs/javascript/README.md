@@ -2,11 +2,12 @@
 pageClass: js
 ---
 
-# Some JavaScript in case you forgot
+# A JavaScript Overview
 
-This section covers some more or less basic Javascript needed for Vue Developers.
+I though it would be usefull to create a JavaScript section as well.
+This section covers some more or less basic JavaScript needed for Vue Developers.
 
-Sections to come :
+## Upcoming Sections
 
 - Variables
 - Data Types
@@ -30,3 +31,7 @@ Sections to come :
 - ESlint Webpack...
 - Browser Storage
 - Browser Support
+
+## Learn JavaScript
+
+If you are trying seriously learn JavaScript, I'll advice **[this excellent 50+ hour course](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)** by Maximilian Schwarzmüller. His VueJS course is also excellent. Both course, and more are available on [Academind.com](https://academind.com/).

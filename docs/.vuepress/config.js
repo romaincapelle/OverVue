@@ -34,14 +34,17 @@ module.exports = {
     sidebar: {
       '/javascript/': [
         {
-          title: 'Javascript', // required
+          title: 'A JavaScript Overview', // required
           path: '/javascript/', // optional, link of the title, which should be an absolute path and must exist
           collapsable: false,
           sidebarDepth: 1, // optional, defaults to 1
           children: [
-            '' /* /foo/ */,
+            'variables.md',
             'arrays.md',
-            'objects.md' /* /foo/two.html */
+            'objects.md',
+            'classes.md',
+            'async.md',
+            'modules.md'
           ]
         }
       ],

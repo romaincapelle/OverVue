@@ -4,12 +4,14 @@ pageClass: js
 
 # Arrays
 
+Arrays are list-like objects. You can store strings, numbers, objects. Arrays can be of the same types, mixed types. You can have nested arrays, or multi-dimensional array...
+
 ## Creating Arrays
 
 ### The "normal way"
 
 ```javascript
-const dreamTeam = ['Michael', "Shaquille", 'Kobe']
+const dreamTeam = ['Michael', 'Shaquille', 'Kobe']
 ```
 
 ### Using the "new" constructor
@@ -18,23 +20,9 @@ const dreamTeam = ['Michael', "Shaquille", 'Kobe']
 const dreamTeam = new Array('Michael', 'Shaquille', 'Kobe')
 ```
 
-Be carefull
-
-```js
-const someNumbers = new Array(5)
-```
-
-will create an empty array with a fix lenght of 5.
-
-but the following will create an array `[5, 2]`
-
-```js
-const someNumbers = new Array(5, 2)
-```
-
 ### Create an Array from a string
 
-#### Using the "from" method
+#### Using "from"
 
 Using the from attribute you can create an array "from" an iterable like
 
@@ -50,7 +38,7 @@ The spellIt is now:
 ;['M', 'i', 'c', 'h', 'a', 'e', 'l']
 ```
 
-#### Using the .split method
+#### Using "split"
 
 ```js
 const playerName = 'Michael.Jordan'
@@ -63,7 +51,9 @@ The splitedName is now:
 ;['Michael', 'Jordan']
 ```
 
-### Create an string from a array using .join()
+### Create an string from a array
+
+#### Using .join()
 
 The contrary of the above method is .join()
 
@@ -78,13 +68,9 @@ The joinedName is now:
 'Michael Jordan'
 ```
 
-## What can you store in arrays ?
+## Accessing data in an arrays
 
-You can store strings, numbers, objects.
-Arrays can be of the same types, mixed types.
-You can have nested arrays, or multi-dimensional array...
-
-## Arrays are index based
+Arrays are index based. The index starts at 0.
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
@@ -103,12 +89,8 @@ dreamTeam[1]
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 dreamTeam.push('Magic Johnson')
-```
-
-push will return the new lenght of the array:
-
-```js
-4
+// push will return the new lenght of the array:
+//4
 ```
 
 and the dreamTeam array is now:
@@ -122,18 +104,14 @@ and the dreamTeam array is now:
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 dreamTeam.unshift('Magic Johnson')
-```
-
-unshift will also return the new lenght of the array:
-
-```js
-4
+// unshift will also return the new lenght of the array:
+//4
 ```
 
 and the dreamTeam array is now:
 
-```js
-;['Magic Johnson', 'Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
+```bash
+['Magic Johnson', 'Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 ```
 
 ## Remove data from array
@@ -143,18 +121,14 @@ and the dreamTeam array is now:
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 dreamTeam.pop()
-```
-
-pop will return the element that was deleted and delete it from the array:
-
-```js
-'Kobe Bryant'
+// pop will return the element that was deleted and delete it:
+// 'Kobe Bryant'
 ```
 
 and the dreamTeam array is now:
 
-```js
-;['Michael Jordan', "Shaquille O'Neal"]
+```bash
+['Michael Jordan', "Shaquille O'Neal"]
 ```
 
 ### Remove data at the beginning (.shift)

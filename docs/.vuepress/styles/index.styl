@@ -1,5 +1,7 @@
 /// scroll bar
-
+ul.sidebar-links > li > a {
+    font-size: 1.2em !important;
+}
 .sidebar, .navbar {
     border: 0px;
 }
@@ -41,6 +43,10 @@ body {
 
 ///  Tip and warnings
 
+.custom-block {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
 
 .custom-block.tip {
     background-color: #1e1d45;
@@ -388,11 +394,14 @@ min-height: 100vh !important;
   background: #bdb8fb !important; 
 }
 
+.js .sidebar-link .active {
+    color : #fed731 ;
+}
 
 
-.js a, .js a.sidebar-link {
-    color : #f2f2f2 ;
-    }
+.js a {
+    color: #fed731 ;
+}
  
 /* Handle */
 .js ::-webkit-scrollbar-thumb {
