@@ -6,7 +6,7 @@ pageClass: js
 
 Arrays are list-like objects. You can store strings, numbers, objects. Arrays can be of the same types, mixed types. You can have nested arrays, or multi-dimensional array...
 
-## Creating Arrays
+## Creating an arrays
 
 ### The "normal way"
 
@@ -51,7 +51,7 @@ The splitedName is now:
 ;['Michael', 'Jordan']
 ```
 
-### Create an string from a array
+## Create a string from an array
 
 #### Using .join()
 
@@ -68,23 +68,23 @@ The joinedName is now:
 'Michael Jordan'
 ```
 
-## Accessing data in an arrays
+## Accessing data
 
 Arrays are index based. The index starts at 0.
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 
-dreamTeam[1]
+dreamTeam[2]
 ```
 
 ```js
-'Shaquille O'Neal'
+'Kobe Bryant'
 ```
 
-## Adding data to array
+## Adding an element
 
-### Add data at the end (.push)
+### Add an element to the end (.push)
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
@@ -99,7 +99,7 @@ and the dreamTeam array is now:
 ;['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant', 'Magic Johnson']
 ```
 
-### Add data at the beginning (.unshift)
+### Add an element to the beginning (.unshift)
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
@@ -114,9 +114,9 @@ and the dreamTeam array is now:
 ['Magic Johnson', 'Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 ```
 
-## Remove data from array
+## Remove an element
 
-### Remove at the end (.pop
+### The last element (.pop)
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
@@ -131,7 +131,7 @@ and the dreamTeam array is now:
 ['Michael Jordan', "Shaquille O'Neal"]
 ```
 
-### Remove data at the beginning (.shift)
+### The first element(.shift)
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
@@ -150,7 +150,7 @@ and the dreamTeam array is now:
 ;["Shaquille O'Neal", 'Kobe Bryant']
 ```
 
-## Replace data in an array
+## Replace an element
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
@@ -169,7 +169,7 @@ and the dreamTeam array is now:
 ;['Michael Jordan', 'Wilt Chamberlain', 'Kobe Bryant']
 ```
 
-If you target an element that doesn't exist it will create all the (undefined) missing element until the new one:
+If you target an element that doesn't exist yet, it will create all the (undefined) missing elements until the new one:
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
@@ -182,9 +182,9 @@ and the dreamTeam array is now:
 ;['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant', , , 'Wilt Chamberlain']
 ```
 
-## Insert data in an array (.splice)
+## Insert an element (.splice)
 
-### Insert data without deleting anything
+### Insert an element without deleting anything
 
 The .splice methods takes:
 
@@ -205,26 +205,16 @@ and the dreamTeam array is now:
 ;['Michael Jordan', 'Bill Russell', "Shaquille O'Neal", 'Kobe Bryant']
 ```
 
-### Insert data and delete some values
+### Insert an element and delete some values
 
 ```js
-const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
-dreamTeam.splice(0, 2, 'Bill Russell', 'Larry Bird')
+const months = ['Jan', 'Feb', 'March', 'April', 'June']
+months.splice(4, 1, 'May')
+// replaces 1 element at index 4
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
 ```
 
-will return the deleted items in an array:
-
-```js
-;['Michael Jordan', "Shaquille O'Neal"]
-```
-
-and the dreamTeam arrayis now:
-
-```js
-;['Bill Russell', 'Larry Bird', 'Kobe Bryant']
-```
-
-### Delete data from the end with a negative index
+#### with a negative index
 
 ```js
 const dreamTeam = [
@@ -235,12 +225,7 @@ const dreamTeam = [
   'Tim Duncan'
 ]
 dreamTeam.splice(-3, 2, 'Bill Russell', 'Larry Bird')
-```
-
-will return the deleted items in an array:
-
-```js
-;['Kobe Bryant', 'Magic Johnson']
+// Will return ['Kobe Bryant', 'Magic Johnson']
 ```
 
 and the dreamTeam array is now:
@@ -255,7 +240,7 @@ and the dreamTeam array is now:
 ]
 ```
 
-## Duplicate/select data in an array with .slice()
+## Duplicate/select data
 
 ### Duplicate the entire array with .slice()
 
@@ -344,7 +329,7 @@ and the dreamTeam array is now:
 ;['Bill Russell', 'Larry Bird']
 ```
 
-## Concatenate arrays together with .concat
+## Concatenate arrays
 
 Using the contact Method will merge two or more arrays together from left to right **and return a new array**
 
@@ -368,7 +353,7 @@ and the finalDreamTeam array is now:
 ]
 ```
 
-## Search Primitive value in an array with .indexOf()
+## Search Primitive value .indexOf()
 
 You can search in an array using .indexOf().
 
@@ -376,24 +361,13 @@ You can search in an array using .indexOf().
 - If the element is not in the array it will return `-1`
 - It works for all primitive value ( numbers, strings, undefined, null ) but not for reference value ( Objects and Arrays )
 
-### Find the first index
+### Find an element
+
+#### The first index
 
 ```js
-const dreamTeam = ['Michael Jordan', "Shaquille O'Neal"]
-dreamTeam.indexOf('Michael Jordan')
-```
-
-This will return:
-
-```js
-0
-```
-
-### Find the last index
-
-```js
-const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Michael Jordan']
-dreamTeam.lastIndexOf('Michael Jordan')
+const dreamTeam = ['Magic', 'Wilt', 'Michael', 'Michael', 'Shaquille']
+dreamTeam.indexOf('Michael')
 ```
 
 This will return:
@@ -402,7 +376,20 @@ This will return:
 2
 ```
 
-### If the element isn't found
+#### the last index
+
+```js
+const dreamTeam = ['Michael', 'Shaquille', 'Michael']
+dreamTeam.lastIndexOf('Michael')
+```
+
+This will return:
+
+```js
+2
+```
+
+#### If the element isn't found
 
 It will return -1
 
@@ -430,9 +417,9 @@ This will return:
 false
 ```
 
-## Search Reference value in an array with .find()
+## Find Reference value
 
-## Use find() to search an object in an array
+### Use find() to search an object in an array
 
 To search an object in an array, you .find(). You will need to pass an (anonymous) function as an argument.
 
@@ -475,7 +462,7 @@ dreamTeam[0] and bestPlayer will both return:
 { name: 'Scottie Pippen', team: 'Chicago Bulls' }
 ```
 
-## Use findIndex to search the index of object within an array
+## Search the index of an object
 
 ```js
 const dreamTeam = [
@@ -491,7 +478,7 @@ indexFrenchPlayer will return:
 1
 ```
 
-## Iterating over an array with for...of
+## Iterating with for...of
 
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal"]
@@ -506,7 +493,7 @@ for (const player of dreamTeam) {
 "Shaquille O'Neal"
 ```
 
-## Iterating over an array and index with forEach()
+## Iterating and index with forEach()
 
 Here is how to access the data in an array and build an new array of objects with the index and modified datas
 
@@ -531,7 +518,7 @@ and the new taxAdjustedPrices array is:
 ]
 ```
 
-## Iterating over and transforming an array with .map()
+## Iterating over and transforming
 
 Contrary to foEach(), .map has to return something. It won't modify the array on which is called on, but will return a new array we can store in a variable.
 
@@ -577,7 +564,7 @@ and the playerArray array is now:
 ;['Michael Jordan', 'Tony Parker']
 ```
 
-## Iterate though and REDUCE an array to one value
+## Iterate and REDUCE to one value
 
 The reduce methods iterate though an array and return one single value. It has the particularity of taking an initial value. here I am using 0 to sum up the points starting at zero. After returning the value, naturally, the original array isn't modified.
 
@@ -823,7 +810,7 @@ const lowestPoint = Math.min(...points)
 50
 ```
 
-## Create variables from array with "Array destructuring"
+## Array destructuring
 
 THis is a special syntax to create a firstName and a lastName variable from the player array
 
