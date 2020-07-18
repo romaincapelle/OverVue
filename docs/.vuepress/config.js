@@ -20,6 +20,13 @@ module.exports = {
       {
         ga: 'UA-166308837-1' // UA-00000000-0
       }
+    ],
+    [
+      'vuepress-plugin-code-copy',
+      {
+        color: '#ff2a6d',
+        backgroundColor: '#ff2a6d'
+      }
     ]
   ],
   themeConfig: {

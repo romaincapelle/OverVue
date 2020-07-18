@@ -1,11 +1,11 @@
 <template>
-  <p>{{ firstName }}</p>
+  <p>{{ name }}</p>
 </template>
 <script>
 export default {
   data() {
     return {
-      firstName: 'The Tiger King'
+      name: 'The Tiger King'
     }
   }
 }
