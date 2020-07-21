@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # VuePress
 
 Since this very website was made using VuePress.vue, I am including those commands.

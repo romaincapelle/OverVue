@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Interpolation
 
 ## Interpolate text

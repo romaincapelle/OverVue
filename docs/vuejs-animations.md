@@ -1,1 +1,5 @@
+---
+pageClass: vuejs
+---
+
 # Animations (soon)

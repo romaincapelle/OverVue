@@ -4,169 +4,77 @@ pageClass: js
 
 # Variables
 
-## Declare a Variables
+## Declare a variable
 
-Using Let and Const, you can declare block scoped Variables
+### Let
+
+Using `let` you can declare [block scoped](#block-scoped-vs-function-and-global-scoped) Variables
 
 ```Js
 let age = 57
-const name = 'Michael Jordan'
 ```
 
-Using let, the value CAN change.
-Using const the value CANNOT change.
-
-[var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var) exist as well.
-
-## Assigning a new value to a variable
-
-Do not re-declare the variable with let
+To assign a new value, do not re-declare the variable using `let`
 
 ```Js
 age = 58
 ```
 
-## Comments
+#### Shadow Variables
 
-There are two types of comments in Javascript
+But you can re-declare a `shadow variable` in different scope. The variables in this local environment are only visible to the code inside of it.
 
-```js
-/*
-Everything in between is a comment.
-*/
-// This is a comment
-```
-
-## Operators
-
-##### Assignment
-
-```Js
-let score = 2
-```
-
-##### Add
-
-```Js
-let score = 0
-score = score + 3;
-```
-
-is the same as
-
-```Js
-let score = 0
-score += 3;
-
-```
-
-The score is `3`
-
-##### Substract
-
-```Js
-let score = 10
-score = score - 3;
-
-```
-
-is the same as
-
-```Js
-let score = 0
-score -= 3;
-```
-
-The score is `7`
-
-##### Multiply
-
-```Js
-let score = 10
-score = score \* 3;
-
-```
-
-is the same as
-
-```Js
-let score = 0
-score *= 3;
-```
-
-The score is `7`
-
-##### Divide
-
-```Js
-let score = 9
-score = score - 3;
-
-```
-
-is the same as
-
-```Js
-let score = 9
-score /= 3;
-```
-
-The score is `3`
-
-##### Divide and Yeld
-
-```Js
-let score = 10
-yieldscore = score % 3;
-```
-
-The yieldscore ( yield the remaining of the division ) is `1`
-
-##### Exponentiation
-
-```Js
-let score = 2
-Score = score \*\* 3;
-```
+The following variable created inside the [if statement](/javascript/control-structures.html#conditionals) is a `shadow variable` and will NOT throw an error:
 
 ```js
-The score is `8`
+let age = 57
+if (1 === 1) {
+  let age = 58
+  console.log(age)
+} // This will console.log "58"
 ```
 
-##### Equality == amd ===
+### Var
 
-```js
-3 === 3
-true
-3 == '3'
-true
+You can and probably should use 'const' and 'let' which is a newer ES6 notation. Var is still available. The [var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var) statement declares a [function-scoped or globally-scoped](<(#block-scoped-vs-function-and-global-scoped)>) variable.
+
+```Js
+var age = 57
 ```
 
-## Data Types
+The following will NOT throw an error: ( and it's arguably a problem ).
 
-## Numbers
-
-```js
-23
-;-3
-22.548
+```Js
+var age = 57
+var age = 58
 ```
 
-## Strings
+## Declare a constant
 
-```js
-let sentence = 'The first “hoops” were actually just peach baskets.';
-let news = `All` + {22} + `teams in the NBA restart`
-let news = `All ${22} teams in the NBA restart` // Template literals
+Using Const, you can declare [block scoped](/javascript/variables.html#block-scoped) constant.
+The value CANNOT change through reassignment therefor it is not really a _variable_.
+
+```Js
+const name = 'Michael Jordan'
 ```
 
-## Conditionals
+## Block Scoped VS Function and Global Scoped
+
+The age declared inside an if statement with var will NOT throw an error, but it will if declared with let.
 
 ```js
-let player = 'Michael Jordan'
-if (player === 'Michael Jordan') {
-  alert('Yay, I love Michael Jordan!')
-} else {
-  alert('Awwww, no...')
+if (true) {
+  var age = 58
 }
+console.log(age) //  This will console.log "58"
 ```
+
+```js
+if (true) {
+  let age = 58
+}
+console.log(age) // ERROR
+```
+
+Var only knows global scope and function scope, so a variable created in a function can't be used outside. A variable created globally can be used everywhere.
+The same for let and const, but because they care about the curly braces, the block scope. That's why they also care about the scope of variable created inside an if statement.

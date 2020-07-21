@@ -182,7 +182,7 @@ and the dreamTeam array is now:
 ;['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant', , , 'Wilt Chamberlain']
 ```
 
-## Insert an element (.splice)
+## Insert an element
 
 ### Insert an element without deleting anything
 
@@ -329,7 +329,7 @@ and the dreamTeam array is now:
 ;['Bill Russell', 'Larry Bird']
 ```
 
-## Concatenate arrays
+## Concatenate
 
 Using the contact Method will merge two or more arrays together from left to right **and return a new array**
 
@@ -353,7 +353,7 @@ and the finalDreamTeam array is now:
 ]
 ```
 
-## Search Primitive value .indexOf()
+## Search Primitive value
 
 You can search in an array using .indexOf().
 

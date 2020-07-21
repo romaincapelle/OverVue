@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Watch
 
 It is tempting to overuse watch, it is often a better idea to use a computed property.

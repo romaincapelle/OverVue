@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Components
 
 ## Import a component

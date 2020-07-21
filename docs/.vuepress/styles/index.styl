@@ -19,9 +19,20 @@ ul.sidebar-links > li > a {
 ::-webkit-scrollbar-track {
   background: #1e1d45; 
 }
- 
+
 /* Handle */
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
+  background: #8E8EA2; 
+}
+
+/* Handle */
+.vuejs ::-webkit-scrollbar-thumb {
+  background: #15f115 !important;
+  border-radius: 10px;
+}
+
+/* Handle */
+.js ::-webkit-scrollbar-thumb {
   background: #15f115; 
   border-radius: 10px;
 }
@@ -40,6 +51,11 @@ body {
     background-color: #100d23;
 }
 
+
+// Tables
+tr:nth-child(2n) {
+    background-color: inherit;
+}
 
 ///  Tip and warnings
 

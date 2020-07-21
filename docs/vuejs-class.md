@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Class & Style Binding
 
 ## Class Binding

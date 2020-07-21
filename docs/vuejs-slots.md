@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Slots
 
 ## Default Slot

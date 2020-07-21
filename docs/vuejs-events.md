@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Events / v-on
 
 Use the `v-on:` directive to listen to DOM events (or the shortcut `@`).

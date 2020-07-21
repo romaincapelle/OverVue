@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Tailwind CSS
 
 ## Intall Tailwind on an existing Vue Project

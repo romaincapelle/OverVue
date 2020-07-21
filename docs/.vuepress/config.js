@@ -37,14 +37,19 @@ module.exports = {
           title: 'A JavaScript Overview', // required
           path: '/javascript/', // optional, link of the title, which should be an absolute path and must exist
           collapsable: false,
-          sidebarDepth: 1, // optional, defaults to 1
+          sidebarDepth: 2, // optional, defaults to 1
           children: [
             'variables.md',
+            'operators.md',
+            'data-types.md',
+            'control-structures.md',
+            'functions.md',
             'arrays.md',
             'objects.md',
             'classes.md',
             'async.md',
-            'modules.md'
+            'modules.md',
+            'programming-paradigms.md'
           ]
         }
       ],
@@ -80,7 +85,7 @@ module.exports = {
         '/vuejs-vscode'
       ]
     },
-    searchPlaceholder: 'Press "S" to focus on Search bar'
+    searchPlaceholder: 'Search ("S" to focus)'
   },
   markdown: {
     lineNumbers: true

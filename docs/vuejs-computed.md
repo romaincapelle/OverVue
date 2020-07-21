@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Computed Properties
 
 Computed properties, convenient for simple operations, allow us to define a property that is used the same way as data, but can also have some custom logic that is cached based on its dependencies. A computed property will only re-evaluate when some of its reactive dependencies have changed.

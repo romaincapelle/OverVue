@@ -1,0 +1,5 @@
+---
+pageClass: js
+---
+
+# Functions

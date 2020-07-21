@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # CLI
 
 ## Vue CLI Common Commands
@@ -45,8 +49,6 @@ npm run lint
 ```
 
 [Customize configuration](https://cli.vuejs.org/config/).
-
-
 
 ## Instant Prototyping
 
