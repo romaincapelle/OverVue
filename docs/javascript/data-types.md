@@ -32,6 +32,15 @@ pageClass: js
 22.548
 ```
 
+#### Render a specific decimal precision
+
+`.toFixed(decimalPlaces)` is used to round to a specific number of decimal. It return a String.
+
+```js
+price = 11 / 3
+console.log('$ ' + price.toFixed(2)) //$ 3.67
+```
+
 ### Strings
 
 ```js

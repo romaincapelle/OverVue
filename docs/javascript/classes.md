@@ -49,4 +49,8 @@ Michael Jordan is 57 years old, he used to play for the Chicago Bulls
 Scottie Pippen is 54 years old, he used to play for the Chicago Bulls
 ```
 
-## Using and Connecting Multiple Classes
+## Static Vs Instance Properties, Field and Methods
+
+Static properties, fields and methods are defined with the `static` keyword. 
+
+## 
