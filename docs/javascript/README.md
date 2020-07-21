@@ -4,7 +4,7 @@ pageClass: js
 
 # A JavaScript Overview
 
-This section covers some core JavaScript needed for Vue Developers, but also things you may have forgotten, and overall just a quick access to JavaScript snippets you might need while building a Vue.js app. I won't be focusing on DOM manipulation as Vue.js should be do the heavy lifting there.
+This section covers some core JavaScript needed for Vue Developers, but also things you may have forgotten, and overall just a quick access to JavaScript snippets you might need while building a Vue.js app.
 
 ## Learning JavaScript
 
