@@ -4,7 +4,7 @@ pageClass: js
 
 # Classes
 
-Classes are blue-prints for object. We can build object base on classes.The fields in classes will be translate to property of the object. There are no coma at the end of the definition of a field ( It could have a semicolon) and we use '=' to assign a default value if needed. If there is not default value, it will be 'undefined' initially.
+Classes are blueprints for objects. We can build objects based on classes.The fields in a class will be translated to property of the object. There is no coma at the end of the definition of a field ( it could have a semicolon) and we use '=' to assign a default value if needed. If there is not default value, it will be 'undefined' initially.
 
 ```js
 class Player {
@@ -20,9 +20,9 @@ We use a Class Method, the constructor method, a special method for creating and
 
 ```js
 class Player {
-  //name = 'DEFAULT'
-  //age
-  //team
+  // name = 'DEFAULT'
+  // age
+  // team
   constructor(name, age, team) {
     this.name = name
     this.age = age
@@ -49,4 +49,4 @@ Michael Jordan is 57 years old, he used to play for the Chicago Bulls
 Scottie Pippen is 54 years old, he used to play for the Chicago Bulls
 ```
 
-## Using and Connecting Multiple Classes.
+## Using and Connecting Multiple Classes

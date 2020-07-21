@@ -89,7 +89,7 @@ dreamTeam[2]
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 dreamTeam.push('Magic Johnson')
-// push will return the new lenght of the array:
+// push will return the new length of the array:
 //4
 ```
 
@@ -104,7 +104,7 @@ and the dreamTeam array is now:
 ```js
 const dreamTeam = ['Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant']
 dreamTeam.unshift('Magic Johnson')
-// unshift will also return the new lenght of the array:
+// unshift will also return the new length of the array:
 //4
 ```
 
@@ -722,11 +722,11 @@ and the sumGamePoints is now:
 
 ## The ...spread operator
 
-### Duplicate an array with the ...spead operator
+### Duplicate an array with the ...spread operator
 
 This has the same syntax but is different from the rest operator (used in function to allows us to represent an indefinite number of arguments as an array.)
 
-You can duplicate an arrray using loop, slice, Array.from(), concat, map, but the ...spead operator is the fastest way.
+You can duplicate an array using loop, slice, Array.from(), concat, map, but the ...spread operator is the fastest way.
 
 ```js
 const dreamTeam = new Array('Michael Jordan', "Shaquille O'Neal", 'Kobe Bryant')
@@ -742,7 +742,7 @@ and copiedDreamTeam is now:
 #### A common mistake
 
 A common mistake is to duplicate an array of object and think that you duplicated the objects as well. No, you didn't.
-You can add new objects to the new array without afecting the original array, but **modifying** any object will still modify it everywhere.
+You can add new objects to the new array without affecting the original array, but **modifying** any object will still modify it everywhere.
 
 ```js
 const gamePoints = [
