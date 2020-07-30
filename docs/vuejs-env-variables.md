@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Environment Variables
 
 ## .env

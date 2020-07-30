@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Form Validation / Vuelidate
 
 ## Install Vuelidate

@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Conditional / v-if
 
 ## Conditional v-if/v-else

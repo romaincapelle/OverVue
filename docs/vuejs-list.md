@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Lists / v-for
 
 ## v-for without index

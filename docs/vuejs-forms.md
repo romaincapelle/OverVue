@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Forms / v-model & 2-Way Binding
 
 ## Basic input

@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Transitions
 
 ## Transition Classes

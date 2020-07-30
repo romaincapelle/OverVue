@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Router
 
 Vue Router is the official router for Vue.js. It is used to add routes to SPAs, Single Page Applications.
@@ -215,12 +219,15 @@ const router = new VueRouter({
 
 export default router
 ```
+
 ## Nested route
 
 ```js {4-17}
 const router = new VueRouter({
   routes: [
-    { path: '/user/:id', component: User,
+    {
+      path: '/user/:id',
+      component: User,
       children: [
         {
           // UserProfile will be rendered inside User's <router-view>
@@ -244,12 +251,10 @@ const router = new VueRouter({
 
 Create a component named for instance `NotFoundComponent`
 
-``` js {4}
+```js {4}
 const router = new VueRouter({
   mode: 'history',
-  routes: [
-    { path: '*', component: NotFoundComponent }
-  ]
+  routes: [{ path: '*', component: NotFoundComponent }]
 })
 ```
 
@@ -270,6 +275,5 @@ export const routes = [
     }
 ];
 ```
-
 
 [See the Official Vue Router doc ](https://router.vuejs.org/)

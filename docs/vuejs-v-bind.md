@@ -1,3 +1,7 @@
+---
+pageClass: vuejs
+---
+
 # Bind HTML attributes / v-bind
 
 Use `v-bind:` or `:` to bind an html any attribute like "src", "href"...
