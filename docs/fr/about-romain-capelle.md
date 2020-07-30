@@ -1,10 +1,10 @@
-# About
+# A propos
 
-## About Romain Capelle
+## A propos de Romain Capelle
 
-My Name is Romain Capelle. Born in the verdant prairies of Northern France, now based in the United States, I still inhale cheese and escargot. For more info, check out my [Personal Website](https://www.romaincapelle.com) / and [feel free to contact me](/contact-romain-capelle)
+Mon nom est Romain Capelle. Je suis né dans les prairies verdoyantes du nord de la France, maintenant installé aux USA, je suis toujours attaché à mes racines. Pour plus d'infos, allez voir mon [Site personnel](https://www.romaincapelle.com) / et [N'hésitez pas à me contacter](/contact-romain-capelle)
 
-## Shoutouts
+## Remerciements
 
-To my friend Ted for introducing me to Vue and getting me started with it.
-I also wanted to thank Maximilian Schwarzmüller for [his amazing course on Vue and Vuex](https://acad.link/vuejs) that you can also find on [Udemy](https://www.udemy.com/course/vuejs-2-the-complete-guide/). I would advise any newcomers to the world of vue.js to get a look at his tutorials. This website was built following along with his course.
+A mon ami Ted pour m'avoir fait découvrir Vue, et pour m'avoir aidé à débuté avec ce framework
+Je voudrais également remercier Maximilian Schwarzmüller pour [son super cours sur Vue et Vuex](https://acad.link/vuejs) que vous pourrez aussi trouver sur [Udemy](https://www.udemy.com/course/vuejs-2-the-complete-guide/). Je conseillerai à toutes les personnes découvrant vue.js d'aller jeter un oeil à ses tutoriels. Ce site a été codé en suivant son cours.
