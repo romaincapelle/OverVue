@@ -3,6 +3,8 @@
   "devDependencies": {
     "@limdongjin/vuepress-plugin-simple-seo": "^1.0.4-alpha.5",
     "@vuepress/plugin-google-analytics": "^1.5.2",
+    "eslint": "^7.5.0",
+    "eslint-plugin-vue": "^6.2.2",
     "vuepress": "^1.4.1",
     "vuepress-plugin-one-click-copy": "^1.0.2"
   },

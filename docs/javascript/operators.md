@@ -8,14 +8,14 @@ pageClass: js
 
 Use "=" to assign a value ( use "==" or "==="for [comparaison](/javascript/operators.html#comparison-operators))
 
-```js
+```js{1}
 salaryMichaelScott = 80
 console.log(salaryMichaelScott) // 80
 ```
 
 ### Addition
 
-```js
+```js {2}
 salaryMichaelScott = 80
 salaryMichaelScott = salaryMichaelScott + 10
 console.log(salaryMichaelScott) // 90
@@ -23,7 +23,7 @@ console.log(salaryMichaelScott) // 90
 
 is the same as
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott += 10
 console.log(salaryMichaelScott) // 90
@@ -31,7 +31,7 @@ console.log(salaryMichaelScott) // 90
 
 To add 1 you can do
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott++
 console.log(salaryMichaelScott) // 81
@@ -39,7 +39,7 @@ console.log(salaryMichaelScott) // 81
 
 ### Subtraction
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott = salaryMichaelScott - 10
 console.log(salaryMichaelScott) // 70
@@ -47,7 +47,7 @@ console.log(salaryMichaelScott) // 70
 
 is the same as
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott -= 10
 console.log(salaryMichaelScott) // 70
@@ -55,7 +55,7 @@ console.log(salaryMichaelScott) // 70
 
 To subtract 1 you can do
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott--
 console.log(salaryMichaelScott) // 79
@@ -63,7 +63,7 @@ console.log(salaryMichaelScott) // 79
 
 ### Multiplication
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott = salaryMichaelScott * 2
 console.log(salaryMichaelScott) // 160
@@ -71,7 +71,7 @@ console.log(salaryMichaelScott) // 160
 
 is the same as
 
-```js
+```js {2}
 salaryMichaelScott = 80
 salaryMichaelScott *= 2
 console.log(salaryMichaelScott) // 160
@@ -79,7 +79,7 @@ console.log(salaryMichaelScott) // 160
 
 ### Division
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott = salaryMichaelScott / 2
 console.log(salaryMichaelScott) // 40
@@ -87,7 +87,7 @@ console.log(salaryMichaelScott) // 40
 
 is the same as
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott /= 2
 console.log(salaryMichaelScott) // 40
@@ -95,7 +95,7 @@ console.log(salaryMichaelScott) // 40
 
 ### Remainder
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott = salaryMichaelScott % 11
 console.log(salaryMichaelScott) // 2
@@ -103,7 +103,7 @@ console.log(salaryMichaelScott) // 2
 
 is the same as
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott %= 11
 console.log(salaryMichaelScott) // 2
@@ -111,7 +111,7 @@ console.log(salaryMichaelScott) // 2
 
 ### Exponentiation
 
-```js
+```js{2}
 salaryMichaelScott = 80
 salaryMichaelScott = salaryMichaelScott ** 2
 console.log(salaryMichaelScott) // 6400
@@ -131,7 +131,7 @@ console.log(salaryMichaelScott) // 6400
 
 The strict equality operator (===) checks whether two values are equal and of the same type.
 
-```js
+```js{1,3,5}
 3 === 3
 true
 3 === '3'

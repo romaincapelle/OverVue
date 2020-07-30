@@ -1,5 +1,6 @@
 {
     "git.ignoreLimitWarning": true,
     "editor.fontLigatures": null,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "eslint.format.enable": true
 }

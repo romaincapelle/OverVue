@@ -8,7 +8,7 @@ pageClass: js
 
 ### if ... else
 
-```js
+```js {2-6}
 let player = 'Michael Jordan'
 if (player === 'Michael Jordan') {
   console.log('Yay, I love Michael Jordan!')
@@ -19,7 +19,7 @@ if (player === 'Michael Jordan') {
 
 ### if ... else if ... else
 
-```js
+```js {2-8}
 let score = 0
 if (score < 3) {
   console.log('Score more')

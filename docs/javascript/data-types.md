@@ -36,7 +36,7 @@ pageClass: js
 
 `.toFixed(decimalPlaces)` is used to round to a specific number of decimal. It return a String.
 
-```js
+```js{1}
 price = 11 / 3
 console.log('$ ' + price.toFixed(2)) //$ 3.67
 ```
@@ -84,7 +84,7 @@ const player = {
 
 Numbers, strings, booleans ([and more](http://localhost:8080/javascript/data-types.html#primitives-types)) are primitive data types. Which mean that when we assign a variable from another variable that has a primitive value. We **copy the value** in memory. It exists twice thus if we change one of the value we don't change it everywhere as seen in the following example:
 
-```js
+```js{1-3}
 let boss = 'Michael Scott'
 let regionalManager = boss // It copies the value of boss
 regionalManager = 'Dwight Schrute' // We reassign regionalManager
@@ -94,7 +94,7 @@ console.log(boss) // "Michael Scott"
 
 On the other hand, object and arrays are reference data types. Which mean that when we assign a variable from another variable that has a reference value. We **copy the address in memory** ( the pointer to that value if you may ). It exists once thus if we change one of the value we change it everywhere as seen in the following example:
 
-```js
+```js {1-6}
 let boss = {
   name: 'Michael Scott',
   branch: 'Scranton'

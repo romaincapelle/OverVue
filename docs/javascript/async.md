@@ -28,7 +28,7 @@ function trackUserHandler() {
     posData => {
       console.log(posData)
     },
-    error => {
+    error => {s
       console.log(error)
     }
   )
@@ -77,10 +77,71 @@ Promises are here to avoid Callback Hell.
 
 ### Promisifying Legacy Web APIs
 
-SetTimeout(), for instance, does not support promises, they still use callback. But We can wrap into promise supported code:
+SetTimeout(), for instance, does not support promises, they still use callback. But We can wrap into promise supported code. A promise is an object with a `.then` method we can use.
+The promise is build on line 2, it takes a function as argument which will be executed right away. It's called from inside the constructor (new Promise()). It's the way to configure what the promise should actually do, what it should wrap itself around. It takes two arguments, both arguments are functions. One is _typically_ called `resolve`, and the other one `reject`.
 
 ```js
+const setTimer = duration => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Done')
+    }, duration)
+  })
+  return promise
+}
+setTimer(2000).then(data => {
+  console.log(data)
+})
 ```
+
+## Chaining Promises
+
+```js
+const getPosition = opts => {
+  const promise = new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(
+      success => {
+        resolve(success)
+      },
+      error => {},
+      opts
+    )
+  })
+  return promise
+}
+
+const setTimer = duration => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Done!')
+    }, duration)
+  })
+  return promise
+}
+
+function trackUserHandler() {
+  let positionData
+  console.log('Before getting Position')
+  getPosition()
+    .then(posData => {
+      positionData = posData
+      console.log('first Promise')
+      return setTimer(4000)
+    })
+    .then(data => {
+      console.log('Second Promise')
+      console.log(data, positionData)
+    })
+}
+
+trackUserHandler()
+```
+
+## Handling Promise Errors
+
+## Async/Await
+
+
 
 ### Newer Functionalities that support Promises
 

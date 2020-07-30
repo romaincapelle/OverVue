@@ -27,7 +27,7 @@ player.sayQuote()
 
 Even if the property doesn't exist yet in an object, you can create it by assigning it a value :
 
-```js
+```js{2}
 const player = { name: 'Michael Jordan' }
 player.number = 23
 ```
@@ -36,7 +36,7 @@ player.number = 23
 
 If the property already exist, then you will overide it by assigning it a new value:
 
-```js
+```js{2}
 const player = { name: 'Michael Jordan' }
 player.name = 'Stephen Curry'
 ```
@@ -45,12 +45,11 @@ player.name = 'Stephen Curry'
 
 To remove a property you can delete a property by using the 'delete' keyword:
 
-```js
+```js{5}
 const player = {
   name: 'Michael Jordan',
   number: 23
 }
-
 delete player.number
 ```
 
@@ -66,7 +65,7 @@ const player = {
 
 There are two ways to access a property
 
-```js
+```js{2,4}
 const player = {
   'first name': 'Michael',
   lastName: 'Jordan',
@@ -76,14 +75,14 @@ const player = {
 
 To access the first name, you need to use the same syntax as with arrays:
 
-```js
+```js{1-2}
 player['first name']
 player[2000]
 ```
 
 To access the last name you can use either way, the way above and the regular way of accessing properties:
 
-```js
+```js{1}
 player.lastname
 ```
 
@@ -91,23 +90,21 @@ player.lastname
 
 You can use the same braket notation to access a property stored in a variable:
 
-```js
+```js{4}
 const player = {
   'first name': 'Michael'
 }
-
 const keyName = 'first name'
 ```
 
-```js
+```js{1}
 player[keyName]
 ```
 
 ### Set property dynamically
 
-```js
+```js{1,3}
 const teamNumber = 'chicagoBullsNumber'
-
 const player = {
   [teamNumber]: 23
 }
@@ -119,15 +116,15 @@ const player = {
 
 Whenever you have a variable which is the same name as a property on an object, when constructing the object, you can omit the property name. The value needs to be a variable, not a string.
 
-```js
-const newMovie = {
-  title: title
+```js{2}
+const player = {
+  name
 }
 ```
 
 is the same as
 
-```js
+```js{2}
 const player = {
   name
 }
@@ -137,7 +134,7 @@ const player = {
 
 With ES2015 Shorthand Method Names, you can now omit the function keyword completely.
 
-```js
+```js{2-4}
 const player = {
   sayCool: function() {
     console.log('Cool')
@@ -147,7 +144,7 @@ const player = {
 
 can be written
 
-```js
+```js{2-4}
 const player = {
   sayCool() {
     console.log('Cool')
@@ -161,8 +158,8 @@ const player = {
 This creates a shallow copy. If any of the fields of the object are references to an array or an object, then just the reference addresses are copied. The fiels that reference a string or a number will be "actually" cloned.
 :::
 
-```js
-const player = { name: 'Michael Jordan', age: 57, teams: ['Bulls', 'Wizards'] }
+```js{2}
+const player = { name: 'Michael', age: 57, teams: ['Bulls', 'Wizards'] }
 const copyPlayer = { ...player }
 ```
 
@@ -170,8 +167,8 @@ In this example the `age` and the `name` are copied. So we can modify them in co
 
 You can make a **shallow** copy of an object with `Object.assign()`
 
-```js
-const player = { name: 'Michael Jordan', age: 57, teams: ['Bulls', 'Wizards'] }
+```js{2}
+const player = { name: 'Michael', age: 57, teams: ['Bulls', 'Wizards'] }
 const copyPlayer = Object.assign({}, player)
 ```
 
@@ -179,8 +176,8 @@ const copyPlayer = Object.assign({}, player)
 
 While copying with the spread operator, you can pass a new value **after** the spread operator and the value will be updated in the copied variable.
 
-```js
-const player = { name: 'Michael Jordan', age 57, teams: ['Bulls', 'Wizards' ]}
+```js{2}
+const player = { name: 'Michael', age 57, teams: ['Bulls', 'Wizards' ]}
 const copyPlayer = { ...player, age : 58}
 ```
 
@@ -188,8 +185,8 @@ const copyPlayer = { ...player, age : 58}
 
 You can actually copy the nested arrays or objects manually by using another spead operator.
 
-```js
-const player = { name: 'Michael Jordan', age: 57, teams: ['Bulls', 'Wizards'] }
+```js{2}
+const player = { name: 'Michael', age: 57, teams: ['Bulls', 'Wizards'] }
 const copyPlayer = { ...player, hobbies: [...teams] }
 ```
 
@@ -197,48 +194,30 @@ const copyPlayer = { ...player, hobbies: [...teams] }
 
 Object Destructuring lets you bind variables to different properties of an object. In other words, you can extract a property in a variable.
 
-```js
-const player = { name: 'Michael Jordan', age: 57, teams: ['Bulls', 'Wizards'] }
+```js {2}
+const player = { name: 'Michael', age: 57, teams: ['Bulls', 'Wizards'] }
 const { name } = player
-console.log(name)
-```
-
-Output:
-
-```js
-'Michael Jordan'
+console.log(name) // 'Michael'
 ```
 
 ### Object Destructuring and rename the variable
 
 You can rename the variable you are creating "on the fly".
 
-```js
-const player = { name: 'Michael Jordan', age: 57, teams: ['Bulls', 'Wizards'] }
+```js{2}
+const player = { name: 'Michael', age: 57, teams: ['Bulls', 'Wizards'] }
 const { name: playerName } = player
-console.log(playerName)
-```
-
-Output:
-
-```js
-'Michael Jordan'
+console.log(playerName) // 'Michael'
 ```
 
 ### Object Destructuring and grab the other values
 
 Like with arrays, you can use a rest parameter to collect all the remaining properties of that object in a new object.
 
-```js
-const player = { name: 'Michael Jordan', age: 57, teams: ['Bulls', 'Wizards'] }
+```js {2}
+const player = { name: 'Michael', age: 57, teams: ['Bulls', 'Wizards'] }
 const { name, ...playerInfo } = player
-console.log(playerInfo)
-```
-
-Output:
-
-```js
-{age: 57, teams: ['Bulls', 'Wizards']}
+console.log(playerInfo) // {age: 57, teams: ['Bulls', 'Wizards']}
 ```
 
 ## Check if a property exists
@@ -248,7 +227,7 @@ With the in operator in an if statement you can check if a property exist in tha
 ```js
 const player = { name: 'Karl Malone', age: 56 }
 if ('yearWon' in player === false) {
-  console.log('This player did not win.')
+  console.log('This player did not win.') // 'This player did not win.'
 }
 ```
 
@@ -257,14 +236,8 @@ It is the same as doing :
 ```js
 const player = { name: 'Karl Malone', age: 56 }
 if (player.yearWon === undefined) {
-  console.log('This player did not win.')
+  console.log('This player did not win.') // 'This player did not win.'
 }
-```
-
-Output:
-
-```js
-'This player did not win.'
 ```
 
 ## The "This" Keyword in a method
@@ -310,11 +283,11 @@ const player = {
   }
 }
 // Step 01
-const unboundMakeHeavier = player.makeHeavier
-console.log(unboundMakeHeavier()) // The function gets invoked at the global scope
+const unboundHeavy = player.makeHeavier
+console.log(unboundHeavy()) // Function gets invoked at the global scope
 
 // Step 02
-const boundMakeHeavier = unboundMakeHeavier.bind(player)
+const boundMakeHeavier = unboundHeavy.bind(player)
 console.log(boundMakeHeavier())
 // expected output: 191
 ```
