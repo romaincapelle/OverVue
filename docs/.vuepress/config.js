@@ -32,7 +32,7 @@ module.exports = {
   themeConfig: {
     logo: '/favicon.svg',
     nav: [
-      { text: 'Javascript', link: '/javascript/' },
+      //{ text: 'Javascript', link: '/javascript/' },
       { text: 'VueJs', link: '/' },
       { text: 'About', link: '/about-romain-capelle' },
       { text: 'Contact', link: '/contact-romain-capelle' }
@@ -44,7 +44,7 @@ module.exports = {
           title: 'A JavaScript Overview', // required
           path: '/javascript/', // optional, link of the title, which should be an absolute path and must exist
           collapsable: false,
-          sidebarDepth: 2, // optional, defaults to 1
+          sidebarDepth: 1, // optional, defaults to 1
           children: [
             'variables.md',
             'operators.md',
