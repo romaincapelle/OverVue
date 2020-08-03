@@ -2,10 +2,9 @@
   <div>
     <form>
       <label for="name">Your name</label>
-      <input v-model="name" type="text"></input><br/>
+      <input v-model="name" type="text" />
       <p>Your name is: {{ name }}</p>
     </form>
-    </div>
   </div>
 </template>
 
@@ -13,8 +12,8 @@
 export default {
   data() {
     return {
-      name : 'Joe Exotic'
-    };
-  },
-};
+      name: 'Joe Exotic'
+    }
+  }
+}
 </script>

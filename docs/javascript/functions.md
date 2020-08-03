@@ -4,11 +4,15 @@ pageClass: js
 
 # Functions
 
-Functions are used to segment off section of the code to make it easier to manage, or to run repeated operations, or both. Here I **declare** the function on line 1 to 3, and **call** the function on line 4.
+Functions are used to segment off section of the code to make it easier to manage, or to run repeated operations, or both.
+
+## Function declaration
+
+Here I **declare** the function on line 1 to 3, and **call** the function on line 4.
 
 ```js
 function sayMyName() {
-  console.log("Heisenberg") 
+  console.log('Heisenberg')
 }
 sayMyName() //"Heisenberg"
 ```
@@ -21,15 +25,14 @@ You can pass zero, one or several arguments to a function.
 
 - The parameters are the variables in the declaration of function. ( Here, name and age)
 
-
 ```js
 function sayMyNameAndAge(name, age) {
-    console.log(`${name}, you are ${ age }`) 
+  console.log(`${name}, you are ${age}`)
 }
 sayMyNameAndAge('Heisenberg', 52) //"Heisenberg, you are 52"
 ```
 
-The parameters's name are only used inside that function so they can be `first` and `last` or `x` and `y` or anything else.
+The parameters are only used inside that function so they can be named `x` and `y` or anything else.
 
 ```js
 firstName = 'Dwight'
@@ -47,7 +50,7 @@ When a function is a property of an object, it is called a "Method" of that Obje
 ```js
 const person = {
   sayMyName: function() {
-  console.log("Heisenberg") //"Heisenberg"
+    console.log('Heisenberg') //"Heisenberg"
   }
 }
 person.sayMyName()
@@ -79,40 +82,62 @@ function sayMyName(name) {
 sayMyName('Heisenberg') // You're god damn right!
 ```
 
-## Types of functions
-
-### Function Expressions
+## Function Expressions
 
 We can store the function in a variable
 
 ```js
 const logName = function sayMyName() {
-  console.log("Heisenberg")
+  console.log('Heisenberg')
 }
 
 logName() // Heisenberg
 ```
 
-### Anonymous functions Expression
+## Anonymous functions Expression
 
-You can ommit the name of the function when storing in a variable, it's called an "anonymous" function expression.
+The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions.
+You can omit the name of the function when storing in a variable, it's called an "anonymous" function expression.
 
 ```js
 const logName = function() {
-  console.log("Heisenberg")
+  console.log('Heisenberg')
 }
-
 logName() // Heisenberg
 ```
 
-### Named functions
+## Arrow Functions
 
-Named function are executed when called by name.
+### Default syntax
 
-### Immediately invoked function expressions
+With ES6, we can rewrite the following function:
 
-Immediately invoked function expressions runs the moment the browser encounter them.
-
+```js
+const logName = function(name) {
+  console.log(name)
+}
+logName() // Heisenberg
 ```
 
+into an arrow function:
+
+```js {1-3}
+const logName = name => {
+  console.log(name)
+}
+logName('Heisenberg') // Heisenberg
+```
+
+### Shorter Shorter Arrow with only one argument
+
+```js {1}
+const logName = name => console.log(name)
+logName('Heisenberg') // Heisenberg
+```
+
+### Shorter Arrow Functions with NO arguments
+
+```js {1}
+const logName = () => console.log('Heisenberg')
+logName() // Heisenberg
 ```

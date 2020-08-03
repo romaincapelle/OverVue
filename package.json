@@ -4,6 +4,7 @@
     "@limdongjin/vuepress-plugin-simple-seo": "^1.0.4-alpha.5",
     "@vuepress/plugin-google-analytics": "^1.5.2",
     "eslint": "^7.5.0",
+    "eslint-config-vuepress": "^2.2.0",
     "eslint-plugin-vue": "^6.2.2",
     "vuepress": "^1.4.1",
     "vuepress-plugin-one-click-copy": "^1.0.2"
@@ -18,6 +19,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "vuelidate": "^0.7.5",

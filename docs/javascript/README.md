@@ -13,17 +13,8 @@ If you are seriously trying learn JavaScript, I'll advise **[this detailled and 
 
 ## Upcoming Sections
 
-- Error Handling
 - Prototypes
-- OOP
-- Browser API
 - Events
-- Function - Closure and Memory MGMT
-- regex and numbers
-- ASYNC: Promises and callbacks
 - http requests
-- Js Library: Lodash, Axios...
-- Modules
-- ESlint Webpack...
 - Browser Storage
 - Browser Support

@@ -2,5 +2,7 @@
     "git.ignoreLimitWarning": true,
     "editor.fontLigatures": null,
     "workbench.iconTheme": "material-icon-theme",
-    "eslint.format.enable": true
+    "eslint.format.enable": true,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true
 }
