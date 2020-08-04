@@ -32,7 +32,7 @@ module.exports = {
   themeConfig: {
     logo: '/favicon.svg',
     nav: [
-      { text: 'Javascript', link: '/javascript/' },
+      //{ text: 'Javascript', link: '/javascript/' },
       { text: 'VueJs', link: '/' },
       { text: 'About', link: '/about-romain-capelle' },
       { text: 'Contact', link: '/contact-romain-capelle' }

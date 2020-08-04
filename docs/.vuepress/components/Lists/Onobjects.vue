@@ -12,7 +12,7 @@ export default {
       zoos: [
         { id: '001', name: 'San Diego Zoo', price: 58 },
         { id: '002', name: 'G.W. Zoo', price: 15 },
-        { id: '002', name: 'Big Cat Rescue', price: 29 }
+        { id: '003', name: 'Big Cat Rescue', price: 29 }
       ]
     }
   }
