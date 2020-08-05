@@ -30,6 +30,10 @@ module.exports = {
     ]
   ],
   themeConfig: {
+    repo: 'romaincapelle/overvue',
+    repoLabel: 'Contribute!',
+    editLinks: true,
+    editLinkText: 'Help me improve this page!',
     logo: '/favicon.svg',
     nav: [
       //{ text: 'Javascript', link: '/javascript/' },
