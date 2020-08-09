@@ -21,12 +21,10 @@ Computed properties, convenient for simple operations, allow us to define a prop
 
 [See the official Vue.js doc](https://vuejs.org/v2/guide/computed.html#Computed-Properties)
 
+<!---
 ## Filter though a list
-
 #### Input:
-
 <<< @/docs/.vuepress/components/Computed/Filtering.vue
-
 #### Output:
-
 <Computed-Filtering />
+-->
