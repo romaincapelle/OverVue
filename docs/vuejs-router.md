@@ -67,16 +67,16 @@ export default router
 
 #### Input (App.vue)
 
-Adding the links and where the routing lives.
+To adding the links (Line 4-7) use `router-link` and the routing is rendered with `router-view` (line 9).
 
-```js {4-5,7}
+```js {4-7,9}
 <template>
   <div id="app">
     <div id="nav">
       <router-link to="/" exact>
         Home
-      </router-link>{' '}
-      |<router-link to="/about">About</router-link>
+      </router-link>
+      <router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
@@ -93,7 +93,7 @@ The active link will automatically be bound to two css `class="router-link-activ
 
 ##### Input
 
-```js {4-5}
+```js {3-4}
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
@@ -119,7 +119,7 @@ One consequence of this is that `<router-link to="/">` will be active for every 
 
 ##### Input
 
-```js {3,6}
+```js {6-8}
 <template>
   <div id="nav">
     <a href="/" class="">
@@ -175,7 +175,7 @@ Instead of a `<a>Home</a>` we can render a link as a `<li>Home</li>` for instanc
 
 #### Input:
 
-<<< @/docs/.vuepress/components/Router/linkWithinCode.vue {2,8-10}
+<<< @/docs/.vuepress/components/Router/linkWithinCode.vue {3,9-11}
 
 #### Output:
 

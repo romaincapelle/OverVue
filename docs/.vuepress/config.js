@@ -30,12 +30,14 @@ module.exports = {
     ]
   ],
   themeConfig: {
+    smoothScroll: true,
     repo: 'romaincapelle/OverVue',
     repoLabel: 'Contribute!',
     logo: '/favicon.svg',
     nav: [
       //{ text: 'Javascript', link: '/javascript/' },
       { text: 'VueJs', link: '/' },
+      { text: 'Nuxt', link: '/nuxt/' },
       { text: 'About', link: '/about-romain-capelle' },
       { text: 'Contact', link: '/contact-romain-capelle' }
     ],
@@ -62,6 +64,15 @@ module.exports = {
           ]
         }
       ],
+      '/nuxt/': [
+        {
+          title: 'A Nuxt Overview', // required
+          path: '/nuxt/', // optional, link of the title, which should be an absolute path and must exist
+          collapsable: false,
+          sidebarDepth: 1, // optional, defaults to 1
+          children: ['cli.md', 'other.md']
+        }
+      ],
       // fallback
       '/': [
         '/',
@@ -82,7 +93,7 @@ module.exports = {
         '/vuejs-router',
         '/vuejs-transitions',
         //'/vuejs-animations',
-        //'/vuejs-filters',
+        '/vuejs-filters',
         //'/vuejs-mixins',
         //'/vuejs-directives',
         '/vuejs-Axios',
