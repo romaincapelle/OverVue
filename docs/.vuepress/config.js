@@ -60,7 +60,8 @@ module.exports = {
             'classes.md',
             'async.md',
             'modules.md',
-            'programming-paradigms.md'
+            'programming-paradigms.md',
+            'querying-dom'
           ]
         }
       ],
@@ -69,8 +70,8 @@ module.exports = {
           title: 'A Nuxt Overview', // required
           path: '/nuxt/', // optional, link of the title, which should be an absolute path and must exist
           collapsable: false,
-          sidebarDepth: 1, // optional, defaults to 1
-          children: ['cli.md', 'other.md']
+          sidebarDepth: 1 // optional, defaults to 1
+          //children: ['cli.md', 'other.md']
         }
       ],
       // fallback
@@ -94,7 +95,7 @@ module.exports = {
         '/vuejs-transitions',
         //'/vuejs-animations',
         '/vuejs-filters',
-        //'/vuejs-mixins',
+        '/vuejs-mixins',
         //'/vuejs-directives',
         '/vuejs-Axios',
         //'/vuejs-Auth',
