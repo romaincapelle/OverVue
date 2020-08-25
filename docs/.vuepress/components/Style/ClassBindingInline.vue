@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="active = !active" :class="{ coolBorder: active }">
-      Click for Dotted lines
+      Click to change button background color
     </button>
   </div>
 </template>
@@ -17,6 +17,7 @@ export default {
 
 <style scoped>
 .coolBorder {
-  border: dotted 1px;
+  background-color: white;
+  color: black;
 }
 </style>
