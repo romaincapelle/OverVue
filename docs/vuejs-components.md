@@ -173,7 +173,7 @@ Now let's see how to pass data from Child to Parent component.
 ## Sync data Parent/Child
 
 To pass data parents to Child, you can sync the data.
-You cannot pass data from child to sibling component directly, without passing the data though an event but or using [Vuex](/vuejs-vuex)
+You cannot pass data from child to sibling component directly, without passing the data though an event bus or using [Vuex](/vuejs-vuex)
 
 #### Input Parent:
 
